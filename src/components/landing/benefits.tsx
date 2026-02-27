@@ -15,6 +15,7 @@ import {
   Sparkles,
   Shield,
   Rocket,
+  Eye,
 } from 'lucide-react';
 
 const iconMap: { [key: string]: React.ReactNode } = {
@@ -33,6 +34,7 @@ const iconMap: { [key: string]: React.ReactNode } = {
   Sparkles: <Sparkles className="w-7 h-7" />,
   Shield: <Shield className="w-7 h-7" />,
   Rocket: <Rocket className="w-7 h-7" />,
+  Eye: <Eye className="w-7 h-7" />,
 };
 
 const BenefitCard = ({

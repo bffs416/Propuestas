@@ -58,6 +58,13 @@ export default function ProjectDialog({
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     console.log(values);
+
+    // Redirect to WhatsApp
+    const phone = '573203004537';
+    // Remove "Dra." or basic prefixes to avoid redundancy if user types it, or just pass the verbatim text they wrote
+    const message = encodeURIComponent(`La ${values.name} acepto la solicitud de la propuesta comercial Nyvara`);
+    window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
+
     toast({
       title: 'Propuesta enviada',
       description: 'Gracias por su interés. Nos pondremos en contacto pronto.',

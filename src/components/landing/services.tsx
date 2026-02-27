@@ -331,7 +331,7 @@ const SocialService = ({ proposalData }: { proposalData: ProposalData }) => {
     <div ref={sectionRef} className="service-card hyperglass rounded-[2.5rem] overflow-hidden relative reveal">
       <div className="p-8 md:p-14">
         <div className="flex flex-col md:flex-row justify-between items-start mb-12 gap-6">
-          <div>
+          <div className="w-full">
             <span className="text-blue-600 text-[10px] font-bold uppercase tracking-widest px-3 py-1 bg-blue-50 rounded-lg border border-blue-100">
               Servicio Principal
             </span>
@@ -347,20 +347,6 @@ const SocialService = ({ proposalData }: { proposalData: ProposalData }) => {
                 <p className="text-sm text-slate-600 leading-relaxed">{service.porque_es_importante}</p>
               </div>
             )}
-          </div>
-          <div className="text-left md:text-right bg-blue-600 p-5 rounded-2xl shadow-xl shadow-blue-200">
-            <span className="text-blue-100 text-[10px] block uppercase font-bold tracking-widest mb-1">
-              Inversión Mensual
-            </span>
-            <span className="text-3xl font-bold font-mono text-white">
-              COP{' '}
-              <span>
-                {service.precio_sin_iva.toLocaleString('es-CO')}
-              </span>
-              <span className="text-xs font-normal text-blue-200 ml-1">
-                (Neto)
-              </span>
-            </span>
           </div>
         </div>
 
@@ -407,14 +393,16 @@ const SocialService = ({ proposalData }: { proposalData: ProposalData }) => {
           )}
 
           {noIncluye && (
-            <div className="bg-red-50/20 p-6 rounded-3xl border border-white/40 backdrop-blur-sm">
-              <h4 className="text-[10px] uppercase font-bold tracking-widest text-red-400 mb-5">
+            <div className="bg-red-50 p-6 rounded-3xl border border-red-200 shadow-sm relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-red-100 rounded-full blur-3xl -mr-10 -mt-10"></div>
+              <h4 className="text-[11px] uppercase font-bold tracking-widest text-red-600 mb-5 flex items-center relative z-10">
+                <span className="w-2 h-2 rounded-full bg-red-500 mr-2 animate-pulse"></span>
                 {noIncluye?.titulo}
               </h4>
-              <ul className="space-y-2 text-[11px] text-slate-400 italic">
+              <ul className="space-y-3 text-[13px] text-red-900/80 font-medium relative z-10">
                 {noIncluye?.items.map((item: string, index: number) => (
                   <li key={index} className="flex items-start">
-                    <span className="mr-2 text-red-300">•</span>
+                    <span className="mr-3 text-red-500 font-bold">×</span>
                     {item}
                   </li>
                 ))}

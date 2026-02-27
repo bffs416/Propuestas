@@ -673,22 +673,22 @@ export const mildredSocialData = {
       "feature_cards": [
         {
           "title": "Historias Educativas",
-          "description": "7 Historias estáticas para mantener interacción constante.",
+          "description": "7 Historias estáticas al mes. Incluye diseño gráfico alineado a tu marca y redacción (copy).",
           "icon": "MessageCircle"
         },
         {
           "title": "Carruseles de Valor",
-          "description": "2 Carruseles (6 imágenes cada uno) sobre temas específicos.",
+          "description": "2 Carruseles al mes (6 imágenes/slides cada uno). Incluye estructuración del tema, diseño y copy.",
           "icon": "LayoutTemplate"
         },
         {
           "title": "Producción de Audiovisuales",
-          "description": "Edición estratégica y profesional de contenido en video entregada mes a mes.",
+          "description": "2 videos mensuales. Incluye guionización y edición estratégica de clips o material provisto.",
           "icon": "Bot"
         },
         {
           "title": "Comunicación Externa",
-          "description": "Adaptación de piezas claves (entre 4 a 8 al mes) para difusión en estados de WhatsApp.",
+          "description": "4 a 8 piezas mensuales adaptadas específicamente al formato vertical de Estados de WhatsApp.",
           "icon": "Sparkles"
         }
       ],
