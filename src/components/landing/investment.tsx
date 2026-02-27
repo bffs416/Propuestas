@@ -33,7 +33,7 @@ export default function Investment({ proposalData }: { proposalData: ProposalDat
           setHasTriggeredCartagena(true);
         }
       },
-      { 
+      {
         threshold: 0.2
       }
     );
@@ -47,7 +47,7 @@ export default function Investment({ proposalData }: { proposalData: ProposalDat
 
   return (
     <>
-      <section 
+      <section
         ref={sectionRef}
         className="mt-24 hyperglass rounded-[3rem] p-10 md:p-14 text-slate-900 shadow-2xl border-white relative overflow-hidden reveal"
       >
@@ -120,16 +120,33 @@ export default function Investment({ proposalData }: { proposalData: ProposalDat
               <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center flex-shrink-0 text-white shadow-lg shadow-blue-200">
                 <Info className="w-5 h-5" />
               </div>
-              <div>
-                <p className="text-sm font-bold text-blue-900 uppercase tracking-wider">Compromiso de Inicio</p>
-                <p className="text-sm text-blue-700 leading-relaxed mt-1">
-                  Para dar inicio formal al desarrollo, es necesario un <strong>abono del 30%</strong> inicial: 
-                  <span className="ml-1 font-mono font-bold text-blue-900 bg-white/50 px-2 py-0.5 rounded">COP {abonoCalculado.toLocaleString('es-CO')}</span>.
-                </p>
-              </div>
+              {proposalData.ref === 'MILDRED_2026' ? (
+                <div>
+                  <p className="text-sm font-bold text-blue-900 uppercase tracking-wider">Saldo Pendiente</p>
+                  <p className="text-sm text-blue-700 leading-relaxed mt-1">
+                    Se registra un <strong>abono previo del 50%</strong>. El saldo restante para la entrega final es de:
+                    <span className="ml-1 font-mono font-bold text-blue-900 bg-white/50 px-2 py-0.5 rounded">COP {(investmentBlock.total_con_iva * 0.5).toLocaleString('es-CO')}</span>.
+                  </p>
+                </div>
+              ) : proposalData.ref === 'MILDRED_SOCIAL_2026' ? (
+                <div>
+                  <p className="text-sm font-bold text-blue-900 uppercase tracking-wider">Inversión Mensual</p>
+                  <p className="text-sm text-blue-700 leading-relaxed mt-1">
+                    Este valor corresponde a la gestión estratégica mensual e integral de redes sociales.
+                  </p>
+                </div>
+              ) : (
+                <div>
+                  <p className="text-sm font-bold text-blue-900 uppercase tracking-wider">Compromiso de Inicio</p>
+                  <p className="text-sm text-blue-700 leading-relaxed mt-1">
+                    Para dar inicio formal al desarrollo, es necesario un <strong>abono del 30%</strong> inicial:
+                    <span className="ml-1 font-mono font-bold text-blue-900 bg-white/50 px-2 py-0.5 rounded">COP {abonoCalculado.toLocaleString('es-CO')}</span>.
+                  </p>
+                </div>
+              )}
             </div>
           </div>
-          
+
           <div className="lg:w-80 flex flex-col justify-end text-center lg:text-right">
             <div className="mb-8">
               <div className="flex justify-center lg:justify-end mb-4">
@@ -158,13 +175,13 @@ export default function Investment({ proposalData }: { proposalData: ProposalDat
       <Dialog open={isCartagenaPopUpOpen} onOpenChange={setIsCartagenaPopUpOpen}>
         <DialogContent className="sm:max-w-[550px] p-0 overflow-hidden border-none bg-transparent shadow-none">
           <div className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-950 p-10 text-white rounded-[3rem] border border-white/10 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.6)] animate-in zoom-in-95 duration-500">
-            <button 
+            <button
               onClick={() => setIsCartagenaPopUpOpen(false)}
               className="absolute top-8 right-8 p-2.5 bg-white/5 hover:bg-white/10 rounded-full transition-all border border-white/10"
             >
               <X className="w-5 h-5" />
             </button>
-            
+
             <div className="flex items-center gap-4 mb-8">
               <div className="w-14 h-14 bg-blue-600/20 rounded-2xl flex items-center justify-center backdrop-blur-xl border border-blue-500/30">
                 <MapPin className="w-7 h-7 text-blue-400" />
@@ -194,7 +211,7 @@ export default function Investment({ proposalData }: { proposalData: ProposalDat
                 ))}
                 <span className="ml-6 text-[11px] font-bold text-blue-400 uppercase tracking-widest flex items-center">Alta Fidelidad</span>
               </div>
-              <button 
+              <button
                 onClick={() => setIsCartagenaPopUpOpen(false)}
                 className="w-full md:w-auto bg-white text-slate-900 px-10 py-4 rounded-2xl font-bold text-sm hover:bg-blue-50 hover:scale-105 transition-all shadow-xl shadow-white/5"
               >

@@ -642,7 +642,138 @@ export const mercyProposalData = {
   ]
 } as const;
 
-export type ProposalData = typeof saraProposalData | typeof mildredProposalData | typeof mercyProposalData;
+export const mildredSocialData = {
+  "ref": "MILDRED_SOCIAL_2026",
+  "titulo": "Propuesta Estratégica de Redes Sociales",
+  "subtitulo": "Especialización: Lipo Vaser Alta Definición",
+  "hero_frase": "Una vitrina estratégica y consistente que respalde tu marca profesional.",
+  "cliente": {
+    "nombre": "Dra. Mildred Moreno",
+    "especialidad": "Liposucción VASER / Alta Definición"
+  },
+  "bloques": [
+    {
+      "id": "objetivo",
+      "titulo": "Objetivo del proyecto",
+      "tipo": "texto",
+      "contenido": [
+        "Fortalecer tu presencia digital con una estrategia de contenido profesional que haga visible tu experiencia, genere confianza y construya una comunidad potencial.",
+        "Planear, producir y gestionar contenido que eduque y conecte con tu audiencia, mostrando tu criterio médico y tus procedimientos.",
+        "Alinear toda la comunicación con la misma línea gráfica de tu página web para proyectar una imagen coherente, sólida y profesional."
+      ]
+    },
+    {
+      "id": "servicio_social",
+      "titulo": "Servicio · Manejo de Redes Sociales",
+      "tipo": "card",
+      "precio_sin_iva": 2700000,
+      "precio_texto": "COP 2.700.000",
+      "bullet_principal": "Gestión estratégica mensual de contenido enfocada en educar, generar confianza y posicionar autoridad clínica.",
+      "porque_es_importante": "Porque un contenido consistente y de alta calidad respalda la decisión del paciente y funciona como vitrina activa 24/7 de tu trabajo. Esta gestión estratégica incluye la creación de guion/copy, selección de hashtags relevantes y 1 ronda de revisión/cambios por publicación antes de su entrega y programación.",
+      "feature_cards": [
+        {
+          "title": "Historias Educativas",
+          "description": "7 Historias estáticas para mantener interacción constante.",
+          "icon": "MessageCircle"
+        },
+        {
+          "title": "Carruseles de Valor",
+          "description": "2 Carruseles (6 imágenes cada uno) sobre temas específicos.",
+          "icon": "LayoutTemplate"
+        },
+        {
+          "title": "Producción de Audiovisuales",
+          "description": "Edición estratégica y profesional de contenido en video entregada mes a mes.",
+          "icon": "Bot"
+        },
+        {
+          "title": "Comunicación Externa",
+          "description": "Adaptación de piezas claves (entre 4 a 8 al mes) para difusión en estados de WhatsApp.",
+          "icon": "Sparkles"
+        }
+      ],
+      "caracteristicas": [
+        {
+          "titulo": "Entregables Mensuales (Archivos + Copy)",
+          "items": [
+            "7 Historias estáticas (diseño y redacción).",
+            "2 Carruseles de un tema específico (6 imágenes).",
+            "2 Videos mensuales listos para publicar (3 videos el primer mes).",
+            "4 a 8 imágenes/estados ajustados mensualmente para WhatsApp.",
+            "Reporte mensual básico de indicadores (alcance, interacciones, clics a WhatsApp)."
+          ]
+        },
+        {
+          "titulo": "No incluye (Adicionales)",
+          "items": [
+            "Grabaciones de video físicas en clínica o locación.",
+            "Fotografía médica profesional.",
+            "Community management en tiempo real (respuestas a mensajes/DMs activos).",
+            "Pauta publicitaria o presupuesto de Ads (Manejo de pauta se cotiza separado)."
+          ]
+        }
+      ],
+      "nota_legal": "No prometemos un número específico de clientes ni ventas directas, el resultado depende de múltiples factores externos."
+    },
+    {
+      "id": "paquete",
+      "titulo": "Inversión Mensual Propuesta",
+      "tipo": "resumen_costos",
+      "items": [
+        {
+          "nombre": "Plan de Contenidos y Redes Sociales",
+          "valor_sin_iva": 2700000,
+          "valor_texto": "COP 2.700.000"
+        }
+      ],
+      "subtotal_sin_iva": 2700000,
+      "subtotal_texto": "Inversión: COP 2.700.000 (Mensual antes de IVA)",
+      "iva_porcentaje": 19,
+      "iva_valor": 513000,
+      "iva_texto": "IVA (19%): COP 513.000",
+      "total_con_iva": 3213000,
+      "total_texto": "Total Mensual: COP 3.213.000 (IVA incluido)",
+      "nota": "Condiciones del plan: El valor es de carácter mensual y de pago anticipado. Este plan garantiza la entrega de todo el material (archivos gráficos, de video, textos/copy y hashtags) con 1 ronda de revisión. No incluye la pauta publicitaria (Ads), fotografía presencial ni community management activo de respuesta de DMs. Entregamos todo el material para su fácil publicación o programación desde Meta Business Suite."
+    },
+    {
+      "id": "ventajas",
+      "titulo": "Beneficios de una Estrategia Digital",
+      "tipo": "lista_iconos",
+      "items": [
+        {
+          "title": "Coherencia Visual",
+          "description": "Contenido alineado a la misma línea gráfica de tu web.",
+          "icon": "Eye",
+          "iconBg": "bg-blue-100",
+          "iconColor": "text-blue-600"
+        },
+        {
+          "title": "Confianza Clínica",
+          "description": "Refuerza la decisión del paciente mediante educación médica.",
+          "icon": "Shield",
+          "iconBg": "bg-indigo-100",
+          "iconColor": "text-indigo-600"
+        },
+        {
+          "title": "Visibilidad Estratégica",
+          "description": "Una vitrina consistente que respalda tu marca como Dra. Moreno.",
+          "icon": "Target",
+          "iconBg": "bg-red-100",
+          "iconColor": "text-red-600"
+        },
+        {
+          "title": "Adaptación Multiplataforma",
+          "description": "Material entregado listo para su uso tanto en Instagram como WhatsApp.",
+          "icon": "Hand",
+          "iconBg": "bg-green-100",
+          "iconColor": "text-green-600"
+        }
+      ]
+    }
+  ]
+} as const;
+
+export type ProposalData = typeof saraProposalData | typeof mildredProposalData | typeof mildredSocialData | typeof mercyProposalData;
 export type Bloque = (typeof saraProposalData)['bloques'][number];
 export type CardBlock = Extract<Bloque, { tipo: 'card' }>;
 export type CostSummaryBlock = Extract<Bloque, { tipo: 'resumen_costos' }>;
