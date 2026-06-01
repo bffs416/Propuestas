@@ -95,12 +95,12 @@ export default function Investment({ proposalData }: { proposalData: ProposalDat
             </div>
 
             {/* Inversión Total Final */}
-            <div className="p-8 bg-slate-900 rounded-[2.5rem] flex flex-col md:flex-row justify-between items-center text-white shadow-2xl border border-slate-800 mb-8">
+            <div className="p-8 bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-800 rounded-[2.5rem] flex flex-col md:flex-row justify-between items-center text-white shadow-xl shadow-blue-500/10 border border-blue-500/20 mb-8">
               <div className="mb-6 md:mb-0">
-                <span className="text-[10px] uppercase tracking-widest font-bold opacity-60">
+                <span className="text-[10px] uppercase tracking-widest font-bold text-blue-100">
                   Inversión Total Final
                 </span>
-                <div className="text-4xl md:text-6xl font-outfit font-bold tracking-tighter mt-1 text-blue-400">
+                <div className="text-4xl md:text-5xl font-outfit font-bold tracking-tighter mt-1 text-white">
                   COP{' '}
                   <span>
                     {investmentBlock.total_con_iva.toLocaleString('es-CO')}
@@ -109,7 +109,7 @@ export default function Investment({ proposalData }: { proposalData: ProposalDat
               </div>
               <button
                 onClick={() => setIsDialogOpen(true)}
-                className="bg-blue-600 hover:bg-blue-500 text-white px-12 py-6 rounded-[1.5rem] text-lg font-bold transition-all duration-300 transform hover:scale-105 shadow-xl shadow-blue-500/20 uppercase tracking-widest"
+                className="bg-white hover:bg-blue-50 text-blue-700 px-12 py-5 rounded-[1.5rem] text-sm font-bold transition-all duration-300 transform hover:scale-105 shadow-lg uppercase tracking-wider border border-blue-200/50"
               >
                 ACEPTAR PROPUESTA
               </button>

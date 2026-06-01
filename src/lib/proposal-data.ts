@@ -592,17 +592,9 @@ export const mercyProposalData = {
         },
         {
           "title": "Eficiencia Comercial",
-          "description": "Reducción drástica del tiempo dedicado a la gestión manual de pedidos y ventas.",
           "icon": "Briefcase",
           "iconBg": "bg-slate-100",
           "iconColor": "text-slate-600"
-        },
-        {
-          "title": "Fotos con IA Pro",
-          "description": "Imágenes de producto generadas con agentes IA para proyectar alta gama.",
-          "icon": "Sparkles",
-          "iconBg": "bg-yellow-100",
-          "iconColor": "text-yellow-600"
         },
         {
           "title": "Seguridad Digital",
@@ -773,7 +765,398 @@ export const mildredSocialData = {
   ]
 } as const;
 
-export type ProposalData = typeof saraProposalData | typeof mildredProposalData | typeof mildredSocialData | typeof mercyProposalData;
+export const wilmerEconomicaProposalData = {
+  "ref": "WILMER_ECO_2026",
+  "titulo": "Propuesta Tecnológica Económica (Starter)",
+  "subtitulo": "Clínica Dr. Wilmer Muñoz · Método RIEE Esencial",
+  "hero_frase": "La longevidad como puerta de entrada. Ecosistema digital exclusivo diseñado para proyectar la ciencia y exclusividad del Método RIEE.",
+  "cliente": {
+    "nombre": "Dr. Wilmer Muñoz",
+    "especialidad": "Cirugía Plástica y Medicina Estética"
+  },
+  "bloques": [
+    {
+      "id": "objetivo",
+      "titulo": "Objetivo del proyecto",
+      "tipo": "texto",
+      "contenido": [
+        "Proyectar con autoridad el Método RIEE (Ruta Integral para el Envejecimiento y Rejuvenecimiento Exitoso) y captar pacientes de alto valor bajo la premisa: 'Este no es un lugar para hacerse algo... es un lugar para confiar el paso del tiempo'.",
+        "Estructurar los canales de comunicación basándose en los 5 pilares: Medicina Integrativa, Medicina Bioreguladora, Medicina Regenerativa, Cirugía Avanzada y Medicina Antiage.",
+        "Implementar un CRM médico para control digital inicial de pacientes y un asistente IA básico en WhatsApp para atención al instante y pre-filtrado de citas."
+      ]
+    },
+    {
+      "id": "servicio_web",
+      "titulo": "Servicio 1 · CRM Médico Esencial & Seguridad Básica",
+      "tipo": "card",
+      "precio_sin_iva": 3000000,
+      "precio_texto": "COP 3.000.000 (sin IVA)",
+      "bullet_principal": "Control de base de datos de pacientes, registro básico de consultas e historial clínico inicial.",
+      "porque_es_importante": "Porque organiza la información clínica básica en la nube, garantizando el control digital de tus pacientes sin incurrir en costos elevados, sentando las bases operativas de tu consultorio.",
+      "caracteristicas": [
+        {
+          "titulo": "Desarrollo",
+          "items": [
+            "Arquitectura del CRM médico en su versión estándar para control interno.",
+            "Panel de control privado y registro simplificado del historial clínico.",
+            "Configuración y despliegue del entorno en base de datos segura."
+          ]
+        },
+        {
+          "titulo": "Incluye",
+          "items": [
+            "Gestión digital del listado de pacientes con buscador integrado.",
+            "Historial clínico básico por paciente para notas de consulta.",
+            "Formulario digital de consentimiento informado estándar (formato PDF)."
+          ]
+        },
+        {
+          "titulo": "Valores agregados",
+          "items": [
+            "Seguridad Antiihack estándar para la base de datos de pacientes.",
+            "Copias de seguridad semanales automáticas de la información.",
+            "Soporte básico por correo electrónico y chat ante fallos."
+          ]
+        },
+        {
+          "titulo": "No incluye",
+          "items": [
+            "Firmas electrónicas con validez legal certificada (solo guardado en PDF estándar).",
+            "Dashboard financiero de analítica avanzada o módulo de inventarios de insumos.",
+            "Módulo de facturación electrónica integrado compatible con la DIAN."
+          ]
+        }
+      ],
+      "nota_legal": "Requiere mantenimiento mensual a partir de la entrega para servidor y soporte técnico."
+    },
+    {
+      "id": "servicio_auto",
+      "titulo": "Servicio 2 · Portal Web Profesional & Asistente IA Básico en WhatsApp",
+      "tipo": "card",
+      "precio_sin_iva": 4000000,
+      "precio_texto": "COP 4.000.000 (sin IVA)",
+      "bullet_principal": "Página web profesional con información clave, catálogo y bot IA básico para pre-consulta en WhatsApp.",
+      "porque_es_importante": "Porque una web informativa y clara es tu principal herramienta para generar confianza en pacientes, mientras que el asistente IA básico en WhatsApp responde dudas repetitivas las 24 horas liberando a tu equipo.",
+      "feature_cards": [
+        {
+          "title": "Portal Web Profesional",
+          "description": "Landing page limpia con información del Dr., procedimientos, blog y contacto.",
+          "icon": "LayoutTemplate"
+        },
+        {
+          "title": "Asistente IA WhatsApp",
+          "description": "Agente básico entrenado con preguntas frecuentes (FAQ) para atención al instante.",
+          "icon": "Bot"
+        },
+        {
+          "title": "Pre-filtrado de Citas",
+          "description": "El bot recoge datos del paciente y tipo de procedimiento antes de transferir a un humano.",
+          "icon": "Target"
+        },
+        {
+          "title": "Soporte Multiplataforma",
+          "description": "Diseño responsivo optimizado para una excelente visualización en dispositivos móviles.",
+          "icon": "Sparkles"
+        }
+      ],
+      "caracteristicas": [
+        {
+          "titulo": "Incluye técnicamente",
+          "items": [
+            "Diseño UI/UX estándar y programación de landing page (Next.js responsivo).",
+            "Catálogo informativo de procedimientos estéticos y quirúrgicos principales.",
+            "Formulario de contacto básico conectado al correo electrónico de la clínica.",
+            "Entrenamiento de la IA con respuestas a dudas frecuentes de la consulta del Dr. Muñoz.",
+            "Botón flotante de WhatsApp e integración con la API de mensajería."
+          ]
+        },
+        {
+          "titulo": "No incluye",
+          "items": [
+            "Galería blindada avanzada de resultados antes y después con encriptación.",
+            "Seguimiento automático de cuidados post-operatorios programados por WhatsApp.",
+            "Campañas automáticas de fidelización y reactivación de pacientes inactivos."
+          ]
+        }
+      ],
+      "nota_legal": "Dominio y hosting del portal web incluidos sin costo adicional por el primer año."
+    },
+    {
+      "id": "paquete",
+      "titulo": "Inversión Propuesta · Plan Económico (Starter)",
+      "tipo": "resumen_costos",
+      "items": [
+        {
+          "nombre": "CRM Médico Esencial & Seguridad Básica",
+          "valor_sin_iva": 3000000,
+          "valor_texto": "COP 3.000.000 (sin IVA)"
+        },
+        {
+          "nombre": "Portal Web Profesional & Asistente IA Básico",
+          "valor_sin_iva": 4000000,
+          "valor_texto": "COP 4.000.000 (sin IVA)"
+        }
+      ],
+      "subtotal_sin_iva": 7000000,
+      "subtotal_texto": "Subtotal: COP 7.000.000 (sin IVA)",
+      "iva_porcentaje": 19,
+      "iva_valor": 1330000,
+      "iva_texto": "IVA (19%): COP 1.330.000",
+      "total_con_iva": 8330000,
+      "total_texto": "Total: COP 8.330.000 (incluido IVA)",
+      "nota": "Upgrade posterior a Plan Completo disponible por un valor de COP 8.000.000. Mantenimiento mensual: COP 500.000."
+    },
+    {
+      "id": "ventajas",
+      "titulo": "Beneficios del Plan Económico",
+      "tipo": "lista_iconos",
+      "items": [
+        {
+          "title": "Presencia Profesional",
+          "description": "Una vitrina web moderna que respalda tu reputación y atiende consultas 24/7.",
+          "icon": "Award",
+          "iconBg": "bg-blue-100",
+          "iconColor": "text-blue-600"
+        },
+        {
+          "title": "Ahorro de Tiempo",
+          "description": "La IA atiende preguntas repetitivas liberando carga administrativa a tu asistente.",
+          "icon": "Clock",
+          "iconBg": "bg-green-100",
+          "iconColor": "text-green-600"
+        },
+        {
+          "title": "Control Inicial",
+          "description": "Base de datos unificada para no perder el rastro de ningún paciente nuevo.",
+          "icon": "Target",
+          "iconBg": "bg-red-100",
+          "iconColor": "text-red-600"
+        },
+        {
+          "title": "Camino al Éxito",
+          "description": "Infraestructura modular lista para escalar a la versión completa cuando desees.",
+          "icon": "Rocket",
+          "iconBg": "bg-purple-100",
+          "iconColor": "text-purple-600"
+        }
+      ]
+    },
+    {
+      "id": "nota_final",
+      "titulo": "Condiciones Comerciales · Plan Económico",
+      "tipo": "texto",
+      "contenido": [
+        "Validez de esta propuesta: 30 días calendario a partir de su emisión.",
+        "Plan de Pagos: 40% al inicio del desarrollo, 30% contra entrega de demo funcional (semana 3) y 30% contra entrega final (semana 5).",
+        "Propiedad Intelectual: El Dr. Wilmer Muñoz es dueño del 100% del código fuente y bases de datos. Puede cancelar el mantenimiento cuando desee y migrar el sistema.",
+        "Tratamiento de Datos (Ley 1581): El desarrollador actúa como Encargado de datos. La clínica actúa como Responsable legal. La responsabilidad máxima del desarrollador se limita al valor pagado en los últimos 12 meses.",
+        "Soporte y Mantenimiento Incluido: Los primeros 3 meses de mantenimiento y soporte técnico van incluidos 100% gratis dentro del valor del desarrollo inicial.",
+        "Mantenimiento Mensual (A partir del Mes 4): COP 500.000 mensuales. Es de carácter voluntario (para siempre mientras el Dr. Muñoz desee soporte técnico activo).",
+        "El Mantenimiento Incluye: Servidor VPS dedicado de Hostinger Colombia, copias de seguridad diarias automáticas, certificado de seguridad SSL/HTTPS, monitoreo de seguridad 24/7 ante caídas/ataques, ajustes rápidos de respuestas de la IA, actualizaciones del sistema y soporte técnico vía chat/correo con respuesta garantizada en menos de 24 horas.",
+        "El Mantenimiento No Incluye: Nuevas funcionalidades o integraciones (micro-ajustes de <30 minutos se realizan gratis; nuevos módulos o desarrollos se cotizan por separado según su alcance)."
+      ]
+    }
+  ]
+} as const;
+
+export const wilmer360ProposalData = {
+  "ref": "WILMER_360_2026",
+  "titulo": "Propuesta Tecnológica 360° (Completa)",
+  "subtitulo": "Clínica Dr. Wilmer Muñoz · Ecosistema Método RIEE 360°",
+  "hero_frase": "La longevidad como puerta de entrada. Ecosistema digital premium de alta gama diseñado para capturar la esencia del exclusivo Método RIEE y fidelizar Pacientes de Alto Valor.",
+  "cliente": {
+    "nombre": "Dr. Wilmer Muñoz",
+    "especialidad": "Cirugía Plástica y Medicina Estética"
+  },
+  "bloques": [
+    {
+      "id": "objetivo",
+      "titulo": "Objetivo del proyecto",
+      "tipo": "texto",
+      "contenido": [
+        "Proyectar con máxima autoridad científica y médica el exclusivo Método RIEE (Ruta Integral para el Envejecimiento y Rejuvenecimiento Exitoso) bajo la filosofía: 'Este no es un lugar para hacerse algo... es un lugar para confiar el paso del tiempo'.",
+        "Estructurar toda la presencia de cara al paciente en torno a tus 5 pilares clínicos principales: Medicina Integrativa, Medicina Bioreguladora, Medicina Regenerativa, Cirugía Avanzada y Medicina Antiage.",
+        "Implementar un CRM médico avanzado (con control de inventario, facturación DIAN, firmas electrónicas y módulo de imagen) acoplado a un Asistente IA 360° en WhatsApp para atención pre y post-quirúrgica, fidelización y reactivación automática de leads."
+      ]
+    },
+    {
+      "id": "servicio_web",
+      "titulo": "Servicio 1 · CRM Médico Inteligente, Inventario & Administración",
+      "tipo": "card",
+      "precio_sin_iva": 8000000,
+      "precio_texto": "COP 8.000.000 (sin IVA)",
+      "bullet_principal": "Estructura interna segura para el control absoluto de pacientes, firmas electrónicas, inventario y facturación integral.",
+      "porque_es_importante": "Porque unifica la gestión clínica en un solo lugar: desde el control estricto de insumos médicos y facturación DIAN, hasta el blindaje legal de consentimientos y autorizaciones, reduciendo fugas financieras y riesgos normativos.",
+      "caracteristicas": [
+        {
+          "titulo": "Desarrollo",
+          "items": [
+            "Arquitectura del CRM médico avanzada y adaptada a cirugía plástica.",
+            "Panel de control privado y dashboard financiero gerencial para análisis clínico.",
+            "Configuración y optimización de base de datos en nube cifrada de alto rendimiento."
+          ]
+        },
+        {
+          "titulo": "Incluye",
+          "items": [
+            "Sistema digital de consentimientos informados con firmas electrónicas legales.",
+            "Autorización de Uso de Imagen de pacientes (módulo legal crítico gineco-estético/quirúrgico).",
+            "Módulo de Facturación y Pagos Integrados compatible con facturación electrónica DIAN.",
+            "Inventario y Control de Insumos Médicos para control de stock del consultorio."
+          ]
+        },
+        {
+          "titulo": "Valores agregados",
+          "items": [
+            "Cifrado de datos y blindaje Antiihack con seguridad perimetral avanzada.",
+            "Copias de seguridad diarias automáticas en nube segura y redundante.",
+            "Manual administrativo y videotutoriales interactivos de autogestión."
+          ]
+        },
+        {
+          "titulo": "No incluye",
+          "items": [
+            "Cargos por emisión de firmas electrónicas adicionales de entidades certificadoras.",
+            "Pago de tasas, impuestos o software externo de contabilidad ajeno al desarrollo.",
+            "Dispositivos móviles o hardware de recolección de firmas en físico."
+          ]
+        }
+      ],
+      "nota_legal": "El CRM requiere un mantenimiento mensual posterior para soporte y mantenimiento del hosting seguro."
+    },
+    {
+      "id": "servicio_auto",
+      "titulo": "Servicio 2 · Portal Web Premium, PWA & Asistente IA 24/7 en WhatsApp",
+      "tipo": "card",
+      "precio_sin_iva": 6000000,
+      "precio_texto": "COP 6.000.000 (sin IVA)",
+      "bullet_principal": "Ecosistema digital de cara al paciente: Portal web premium, asistente IA calificado y pipeline comercial.",
+      "porque_es_importante": "Porque maximiza la conversión de visitantes en consultas reales, reduce el ausentismo con recordatorios y reactiva pacientes inactivos, todo gestionado con un asistente entrenado exclusivamente para tu especialidad médica.",
+      "feature_cards": [
+        {
+          "title": "Portal Web Premium",
+          "description": "Diseño exclusivo minimalista con galería protegida de antes y después y SEO quirúrgico.",
+          "icon": "LayoutTemplate"
+        },
+        {
+          "title": "Asistente IA WhatsApp",
+          "description": "Agente entrenado (DeepSeek/Evolution API) para filtrado, agendamiento y atención pre-consulta.",
+          "icon": "Bot"
+        },
+        {
+          "title": "Seguimiento & Post-Op",
+          "description": "Alertas y envío automático de cuidados y recomendaciones post-operatorias directas a chat.",
+          "icon": "Clock"
+        },
+        {
+          "title": "Fidelización & Leads",
+          "description": "Pipeline comercial integrado y campañas de reactivación inteligentes para pacientes.",
+          "icon": "Target"
+        }
+      ],
+      "caracteristicas": [
+        {
+          "titulo": "Incluye técnicamente",
+          "items": [
+            "Diseño UI/UX y programación de portal web (Next.js con velocidad de carga optimizada).",
+            "Configuración y entrenamiento de la base de conocimientos médica de la IA.",
+            "Pipeline comercial de leads y conversión conectado a canales de WhatsApp.",
+            "Sistema de Fidelización y Reactivación automática de pacientes.",
+            "Integración con API oficial de WhatsApp Business (Evolution API) y panel supervisor."
+          ]
+        },
+        {
+          "titulo": "No incluye",
+          "items": [
+            "Costo de consumo de mensajes de la plataforma de WhatsApp oficial.",
+            "Producción multimedia o fotográfica presencial de la clínica.",
+            "PWA (Aplicación Móvil sin instalar nada) se cotiza como un módulo adicional y opcional."
+          ]
+        }
+      ],
+      "nota_legal": "Dominio y hosting del portal web incluidos sin costo adicional por el primer año."
+    },
+    {
+      "id": "paquete",
+      "titulo": "Inversión total propuesta (v2.0)",
+      "tipo": "resumen_costos",
+      "items": [
+        {
+          "nombre": "CRM Médico Inteligente, Inventario & Administración",
+          "valor_sin_iva": 8000000,
+          "valor_texto": "COP 8.000.000 (sin IVA)"
+        },
+        {
+          "nombre": "Portal Web Premium, IA en WhatsApp & Pipeline",
+          "valor_sin_iva": 6000000,
+          "valor_texto": "COP 6.000.000 (sin IVA)"
+        }
+      ],
+      "subtotal_sin_iva": 14000000,
+      "subtotal_texto": "Subtotal: COP 14.000.000 (sin IVA)",
+      "iva_porcentaje": 19,
+      "iva_valor": 2660000,
+      "iva_texto": "IVA (19%): COP 2.660.000",
+      "total_con_iva": 16660000,
+      "total_texto": "Total: COP 16.660.000 (incluido IVA)",
+      "nota": "Opción Starter (MVP) disponible por COP 7.000.000 (sin IVA). El Upgrade posterior al completo tiene un costo de COP 8.000.000. Aplicación Móvil PWA es adicional."
+    },
+    {
+      "id": "ventajas",
+      "titulo": "Beneficios de la Infraestructura Integral",
+      "tipo": "lista_iconos",
+      "items": [
+        {
+          "title": "Control Financiero",
+          "description": "Dashboard financiero gerencial e inventarios unificados para control absoluto.",
+          "icon": "BarChart",
+          "iconBg": "bg-yellow-100",
+          "iconColor": "text-yellow-600"
+        },
+        {
+          "title": "Conversión IA 24/7",
+          "description": "Captación y seguimiento constante de leads mediante integraciones DeepSeek.",
+          "icon": "Bot",
+          "iconBg": "bg-blue-100",
+          "iconColor": "text-blue-600"
+        },
+        {
+          "title": "Blindaje Legal",
+          "description": "Consentimientos, firmas digitales y autorizaciones de imagen protegidos.",
+          "icon": "Shield",
+          "iconBg": "bg-indigo-100",
+          "iconColor": "text-indigo-600"
+        },
+        {
+          "title": "Retorno Garantizado",
+          "description": "Se paga de forma estimada con la captación de menos de 3 cirugías estéticas.",
+          "icon": "Target",
+          "iconBg": "bg-red-100",
+          "iconColor": "text-red-600"
+        }
+      ]
+    },
+    {
+      "id": "nota_final",
+      "titulo": "Condiciones Comerciales y Técnicas v2.0",
+      "tipo": "texto",
+      "contenido": [
+        "Validez de esta propuesta: 30 días calendario a partir de su emisión.",
+        "Plan de Pagos Estándar: 40% al inicio del desarrollo, 30% contra entrega de demo funcional (semana 5) y 30% contra entrega final operativa (semana 12).",
+        "Propiedad Intelectual: El Dr. Wilmer Muñoz es dueño exclusivo del 100% del código fuente, bases de datos y registros médicos. Puede cancelar el mantenimiento o migrar de servidor cuando lo decida.",
+        "Tratamiento de Datos (Ley 1581): El desarrollador actúa como Encargado de datos. La clínica actúa como Responsable legal. La responsabilidad máxima del desarrollador se limita al valor pagado en los últimos 12 meses.",
+        "Arquitectura Técnica Incorporada: Servidor VPS dedicado de Hostinger Colombia de alto rendimiento, Evolution API y procesamiento de Inteligencia Artificial (DeepSeek).",
+        "Estimado de Costos de Terceros: Consumo de la API de DeepSeek (~$3 USD/mes promedio), APIs externas y firmas electrónicas DIAN a cargo directo de la clínica.",
+        "Soporte y Mantenimiento Incluido: Los primeros 3 meses de mantenimiento técnico y soporte van 100% incluidos gratis dentro del valor de desarrollo.",
+        "Mantenimiento Mensual Fijo (A partir del Mes 4): COP 500.000 mensuales. De carácter voluntario (activo mientras el Dr. Muñoz desee soporte técnico prioritario).",
+        "El Mantenimiento Incluye: Hosting en servidor VPS dedicado (Hostinger Colombia), copias de seguridad diarias automatizadas de datos clínicos y fotos, certificado SSL/HTTPS, monitoreo de seguridad contra ataques 24/7, soporte técnico prioritario (<24h), ajustes de respuestas de la IA y actualizaciones periódicas del sistema.",
+        "El Mantenimiento No Incluye: Nuevas funcionalidades (micro-ajustes de <30 minutos se realizan gratis; nuevos módulos o desarrollos más grandes se cotizan de forma independiente)."
+      ]
+    }
+  ]
+} as const;
+
+export type ProposalData = typeof saraProposalData | typeof mildredProposalData | typeof mildredSocialData | typeof mercyProposalData | typeof wilmerEconomicaProposalData | typeof wilmer360ProposalData;
 export type Bloque = (typeof saraProposalData)['bloques'][number];
 export type CardBlock = Extract<Bloque, { tipo: 'card' }>;
 export type CostSummaryBlock = Extract<Bloque, { tipo: 'resumen_costos' }>;
