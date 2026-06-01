@@ -583,7 +583,7 @@ export default function ComparisonSales({ activePlan = '360' }: Props) {
                   {[
                     { label: 'Portal Web', check: '✅', detail: 'Landing informativa con catálogo básico', good: true },
                     { label: 'WhatsApp IA', check: '⚠️', detail: 'FAQ básico — dudas repetitivas', good: false },
-                    { label: 'CRM Médico', check: '❌', detail: 'No incluye', good: false },
+                    { label: 'CRM Médico', check: '✅', detail: 'Esencial (Base de datos e historia base)', good: true },
                     { label: 'Firmas Electrónicas', check: '❌', detail: 'PDF plano sin firma', good: false },
                     { label: 'Facturación DIAN', check: '❌', detail: 'No incluye', good: false },
                     { label: 'Fidelización', check: '❌', detail: 'No incluye', good: false },
