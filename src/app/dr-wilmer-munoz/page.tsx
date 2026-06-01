@@ -10,6 +10,7 @@ import ComparisonSales from '@/components/landing/comparison-sales';
 import TimelineFlow from '@/components/landing/timeline-flow';
 import Benefits from '@/components/landing/benefits';
 import Footer from '@/components/landing/footer';
+import ProposalGuide from '@/components/landing/proposal-guide';
 import { wilmer360ProposalData, wilmerEconomicaProposalData } from '@/lib/proposal-data';
 import { Shield, Sparkles, Star, TrendingUp } from 'lucide-react';
 
@@ -21,20 +22,33 @@ export default function DrWilmerMunozProposalPage() {
   return (
     <>
       <Header proposalData={currentProposalData} />
-      
+
+      {/* Navegación rápida flotante */}
+      <ProposalGuide />
+
       <main className="max-w-6xl mx-auto px-6 mt-16 relative">
-        <Hero proposalData={currentProposalData} />
-        <TimelineFlow />
-        <Objective proposalData={currentProposalData} />
+        <section id="hero">
+          <Hero proposalData={currentProposalData} />
+        </section>
+        <section id="timeline">
+          <TimelineFlow />
+        </section>
+        <section id="objective">
+          <Objective proposalData={currentProposalData} />
+        </section>
 
-        <div className="space-y-24">
-          <Services proposalData={currentProposalData} />
-        </div>
+        <section id="services">
+          <div className="space-y-24">
+            <Services proposalData={currentProposalData} />
+          </div>
+        </section>
 
-        <Investment proposalData={currentProposalData} />
+        <section id="investment">
+          <Investment proposalData={currentProposalData} />
+        </section>
 
         {/* ── Toggle de Planes (aparece DESPUÉS de la inversión) ── */}
-        <div className="w-full flex flex-col items-center my-16 relative z-20 pt-8 border-t border-slate-200">
+        <section id="compare" className="w-full flex flex-col items-center my-16 pt-8 border-t border-slate-200">
           <span className="text-[10px] uppercase font-bold tracking-[0.3em] text-slate-500 mb-4">
             ¿Prefieres una opción más accesible? Compara los planes
           </span>
@@ -99,10 +113,15 @@ export default function DrWilmerMunozProposalPage() {
               : '✓ Estás visualizando la propuesta Starter enfocada en control digital inicial y portal web informativo con pre-consulta en WhatsApp.'
             }
           </p>
-        </div>
+        </section>
 
-        <ComparisonSales activePlan={activePlan} />
-        <Benefits proposalData={currentProposalData} />
+        <section id="bonos">
+          <ComparisonSales activePlan={activePlan} />
+        </section>
+
+        <section id="benefits">
+          <Benefits proposalData={currentProposalData} />
+        </section>
       </main>
       
       <Footer proposalData={currentProposalData} />
