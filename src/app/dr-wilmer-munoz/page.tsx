@@ -7,6 +7,7 @@ import Objective from '@/components/landing/objective';
 import Services from '@/components/landing/services';
 import Investment from '@/components/landing/investment';
 import ComparisonSales from '@/components/landing/comparison-sales';
+import SystemFlow from '@/components/landing/system-flow';
 import Benefits from '@/components/landing/benefits';
 import Footer from '@/components/landing/footer';
 import { wilmer360ProposalData, wilmerEconomicaProposalData } from '@/lib/proposal-data';
@@ -92,6 +93,7 @@ export default function DrWilmerMunozProposalPage() {
 
         {/* Dynamic Rendered Content */}
         <Hero proposalData={currentProposalData} />
+        <SystemFlow />
         <Objective proposalData={currentProposalData} />
         
         <div className="space-y-24">
