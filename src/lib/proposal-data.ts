@@ -823,7 +823,7 @@ export const wilmerEconomicaProposalData = {
           "items": [
             "Firma electrónica avanzada con trazabilidad (firma dibujada en pantalla, IP, fecha/hora, dispositivo). En el plan Starter la firma se maneja como PDF estándar.",
             "Dashboard financiero de analítica avanzada o módulo de inventarios de insumos.",
-            "Módulo de facturación electrónica. Si se requiere en el futuro, se integra con un proveedor DIAN (Wompi, Máximo o Siigo) cuyo plan mensual corre por cuenta del Dr. Muñoz."
+            "Módulo de facturación electrónica. Si se requiere en el futuro, se integra vía API con Siigo Nube, cuyo plan mensual corre por cuenta del Dr. Muñoz."
           ]
         }
       ],
@@ -954,7 +954,7 @@ export const wilmerEconomicaProposalData = {
         "Mantenimiento Mensual (A partir del Mes 4): COP 500.000 mensuales. Sin cláusula de permanencia (el Dr. Muñoz es dueño absoluto del código y puede migrar el sistema a su propio servidor cuando lo decida), pero indispensable para mantener el servidor VPS activo, las APIs conectadas, copias de seguridad diarias y el sistema en línea.",
         "El Mantenimiento Incluye: Servidor VPS dedicado con datacenter en Colombia, copias de seguridad diarias automáticas, certificado de seguridad SSL/HTTPS, monitoreo de seguridad 24/7 ante caídas/ataques, ajustes rápidos de respuestas de la inteligencia artificial, actualizaciones del sistema y soporte técnico vía chat/correo con respuesta garantizada en menos de 24 horas.",
         "El Mantenimiento No Incluye: Nuevas funcionalidades o integraciones (micro-ajustes de <30 minutos se realizan gratis; nuevos módulos o desarrollos se cotizan por separado según su alcance).",
-        "Costos de Terceros a Cargo Directo del Dr. Muñoz: El plan del proveedor de facturación electrónica (Wompi/Máximo/Siigo) si se requiere en el futuro, consumo de mensajes de WhatsApp Business, consumo de API de inteligencia artificial, y cualquier otro servicio externo no incluido explícitamente en el desarrollo."
+        "Costos de Terceros a Cargo Directo del Dr. Muñoz: El plan del proveedor de facturación electrónica (Siigo Nube API) si se requiere en el futuro, consumo de mensajes de WhatsApp Business, consumo de API de inteligencia artificial, y cualquier otro servicio externo no incluido explícitamente en el desarrollo."
       ]
     }
   ]
@@ -1002,8 +1002,8 @@ export const wilmer360ProposalData = {
           "items": [
             "Sistema digital de consentimientos informados con firma electrónica integrada (el paciente recibe el PDF por WhatsApp, lo lee y firma dibujando con el dedo en su celular. Queda registrado: firma, fecha/hora, IP y dispositivo). Sin costo adicional por firma — desarrollo propio, no depende de entidades externas.",
             "Autorización de Uso de Imagen de pacientes (módulo legal crítico gineco-estético/quirúrgico).",
-            "Módulo de Facturación: el CRM se integra vía API con un proveedor DIAN (Wompi/Máximo/Siigo). El CRM envía los datos de la factura, el proveedor timbra electrónicamente ante la DIAN y el CRM archiva el PDF+XML resultado. El CRM NO emite facturas directamente (no tiene habilitación DIAN).",
-            "El costo del plan del proveedor de facturación (Wompi/Máximo/Siigo) corre por cuenta directa del Dr. Muñoz (~$0 – $150.000/mes según el proveedor). El desarrollo de la integración está incluido en este servicio.",
+            "Integración Nativa con Siigo Nube API: El CRM se integra vía API para sincronizar pacientes como terceros, crear y actualizar facturas de venta, enviarlas automáticamente a la DIAN/paciente y sincronizar recibos de caja y notas crédito. El CRM NO actúa como timbrador directo (no tiene habilitación DIAN), sino que automatiza la operación de tu cuenta de Siigo.",
+            "El plan mensual de la API de Siigo Nube corre por cuenta directa de la clínica (~$0 – $150.000 COP/mes según el plan contratado con Siigo). El desarrollo y configuración de la integración están incluidos en este servicio.",
             "Inventario y Control de Insumos Médicos para control de stock del consultorio."
           ]
         },
@@ -1018,7 +1018,7 @@ export const wilmer360ProposalData = {
         {
           "titulo": "No incluye",
           "items": [
-            "El plan mensual del proveedor de facturación electrónica (Wompi/Máximo/Siigo) corre por cuenta del Dr. Muñoz, NO está incluido en el desarrollo ni en el mantenimiento mensual."
+            "El plan mensual de la API de Siigo Nube corre por cuenta del Dr. Muñoz, NO está incluido en el desarrollo ni en el mantenimiento mensual."
           ]
         }
       ],
@@ -1146,7 +1146,7 @@ export const wilmer360ProposalData = {
         "Propiedad Intelectual: El Dr. Wilmer Muñoz es dueño exclusivo del 100% del código fuente, bases de datos y registros médicos. Puede cancelar el mantenimiento o migrar de servidor cuando lo decida.",
         "Tratamiento de Datos (Ley 1581): El desarrollador actúa como Encargado de datos. La clínica actúa como Responsable legal. La responsabilidad máxima del desarrollador se limita al valor pagado en los últimos 12 meses.",
         "CRONOGRAMA DE ENTREGA — 6 SEMANAS: Semana 1 (Setup + CRM base + Página Web), Semana 2 (WhatsApp IA + Agenda), Semana 3 (Recordatorios + Post-Op + Encuestas NPS), Semana 4 (Dashboard + Firmas + Pipeline Leads), Semana 5 (Facturación DIAN + Inventario + Galería Blindada), Semana 6 (Antiihack + PWA + Pruebas finales + Despliegue). El Dr. tendrá un sistema funcional desde la semana 3.",
-        "Estimado de Costos de Terceros (a cargo directo del Dr. Muñoz): plan de facturación electrónica con Wompi/Máximo/Siigo (~$0 – $150.000 COP/mes), consumo de mensajes de WhatsApp Business (~$10 – $50 USD/mes según volumen), firmas electrónicas certificadas (~$2.000 – $5.000 COP por firma) y API de inteligencia artificial.",
+        "Estimado de Costos de Terceros (a cargo directo del Dr. Muñoz): plan de la API de Siigo Nube (~$0 – $150.000 COP/mes), consumo de mensajes de WhatsApp Business (~$10 – $50 USD/mes según volumen), firmas electrónicas certificadas (~$2.000 – $5.000 COP por firma) y API de inteligencia artificial.",
         "Soporte y Mantenimiento Incluido: Los primeros 3 meses de mantenimiento técnico y soporte van 100% incluidos gratis dentro del valor de desarrollo.",
         "Mantenimiento Mensual Fijo (A partir del Mes 4): COP 500.000 mensuales. Sin cláusula de permanencia (el Dr. Muñoz es dueño absoluto del código y puede migrar el sistema a su propio servidor cuando lo decida), pero indispensable para mantener el servidor VPS activo, las APIs conectadas, copias de seguridad diarias y el sistema en línea.",
         "El Mantenimiento Incluye: Hosting en servidor VPS dedicado con datacenter en Colombia, copias de seguridad diarias automatizadas de datos clínicos y fotos, certificado SSL/HTTPS, monitoreo de seguridad contra ataques 24/7, soporte técnico prioritario (<24h), ajustes de respuestas de la inteligencia artificial y actualizaciones periódicas del sistema.",

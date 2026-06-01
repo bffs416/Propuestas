@@ -503,7 +503,7 @@ export default function ComparisonSales({ activePlan = '360' }: Props) {
                     { metric: 'Propiedad del Sistema', ours: '✓ 100% Suyo — el código es su activo permanente', theirs: '✗ Alquiler perpetuo — si no paga, borran su clínica', ourStyle: { color: '#059669', fontWeight: 600 }, theirStyle: { color: '#dc2626' } },
                     { metric: 'Módulo Clínico', ours: '✓ Historias, fotos de evolución e imágenes integradas', theirs: '✗ Inexistente — es software comercial genérico', ourStyle: { color: '#059669', fontWeight: 600 }, theirStyle: { color: '#dc2626' } },
                     { metric: 'Consentimientos Informados', ours: '✓ Firma electrónica legal integrada y nativa', theirs: '✗ Sin soporte legal médico de ningún tipo', ourStyle: { color: '#059669', fontWeight: 600 }, theirStyle: { color: '#dc2626' } },
-                    { metric: 'Facturación y DIAN', ours: '✓ Homologado 100% para normativa colombiana', theirs: '✗ Requiere costosa programación externa y adaptaciones', ourStyle: { color: '#059669', fontWeight: 600 }, theirStyle: { color: '#dc2626' } },
+                    { metric: 'Facturación y DIAN', ours: '✓ Integración nativa vía API con Siigo Nube', theirs: '✗ Requiere costosa programación externa y adaptaciones', ourStyle: { color: '#059669', fontWeight: 600 }, theirStyle: { color: '#dc2626' } },
                   ].map((row, idx) => (
                     <tr key={idx} className="transition-colors hover:bg-sky-50/50">
                       <td className="p-5 pl-6 font-semibold" style={{ color: '#0f172a' }}>{row.metric}</td>
@@ -633,7 +633,7 @@ export default function ComparisonSales({ activePlan = '360' }: Props) {
                     { label: 'WhatsApp IA', check: '✅', detail: 'Auto-Pilot completo: post-op, recordatorios, fidelización', good: true },
                     { label: 'CRM Médico', check: '✅', detail: 'Historias, evolución, fotos, consentimientos', good: true },
                     { label: 'Firmas Electrónicas', check: '✅', detail: 'Firma en pantalla + trazabilidad IP/fecha', good: true },
-                    { label: 'Facturación DIAN', check: '✅', detail: 'Dashboard + integración con proveedor timbrador', good: true },
+                    { label: 'Facturación DIAN', check: '✅', detail: 'Sincronización automática vía API con Siigo Nube', good: true },
                     { label: 'Fidelización', check: '✅', detail: 'Recordatorios cíclicos + referidos automatizados', good: true },
                     { label: 'Mantenimiento', check: '✅', detail: '3 Meses GRATIS (luego $500K/mes)', good: true },
                   ].map((item, i) => (
