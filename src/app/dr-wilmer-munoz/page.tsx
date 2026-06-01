@@ -10,7 +10,6 @@ import ComparisonSales from '@/components/landing/comparison-sales';
 import TimelineFlow from '@/components/landing/timeline-flow';
 import Benefits from '@/components/landing/benefits';
 import Footer from '@/components/landing/footer';
-import ProposalGuide from '@/components/landing/proposal-guide';
 import { wilmer360ProposalData, wilmerEconomicaProposalData } from '@/lib/proposal-data';
 import { Shield, Sparkles, Star, TrendingUp } from 'lucide-react';
 
@@ -22,9 +21,6 @@ export default function DrWilmerMunozProposalPage() {
   return (
     <>
       <Header proposalData={currentProposalData} />
-
-      {/* Navegación rápida flotante */}
-      <ProposalGuide />
 
       <main className="max-w-6xl mx-auto px-6 mt-16 relative">
         <section id="hero">
