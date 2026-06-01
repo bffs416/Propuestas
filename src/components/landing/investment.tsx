@@ -156,7 +156,11 @@ export default function Investment({ proposalData }: { proposalData: ProposalDat
                 Garantía de Excelencia
               </p>
               <p className="text-[11px] text-slate-400 leading-relaxed mt-2 uppercase tracking-tighter">
-                Implementación completa en 25 días hábiles tras recepción de materiales técnicos.
+                {proposalData.ref === 'WILMER_360_2026' ? (
+                  <>Implementación completa en 12 semanas (60 días hábiles) tras recepción de materiales técnicos.</>
+                ) : (
+                  <>Implementación completa en 25 días hábiles tras recepción de materiales técnicos.</>
+                )}
               </p>
             </div>
             <div className="pt-8 border-t border-slate-200/50">
