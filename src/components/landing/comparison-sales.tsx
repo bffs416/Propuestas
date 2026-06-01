@@ -564,45 +564,107 @@ export default function ComparisonSales({ activePlan = '360' }: Props) {
               </div>
             </div>
 
-            {/* Comparison table */}
-            <div className="overflow-x-auto rounded-2xl border"
-              style={{ background: 'rgba(255,255,255,0.9)', borderColor: 'rgba(148,163,184,0.2)', boxShadow: '0 4px 24px rgba(15,23,42,0.05)' }}>
-              <table className="w-full text-left border-collapse min-w-[750px]">
-                <thead>
-                  <tr className="border-b text-xs uppercase tracking-widest font-bold"
-                    style={{ borderColor: 'rgba(148,163,184,0.15)', background: '#f8fafc', color: '#94a3b8' }}>
-                    <th className="p-5 pl-6">Módulo / Alcance</th>
-                    <th className="p-5" style={!is360 ? { color: '#0284c7', background: 'rgba(14,165,233,0.04)' } : { color: '#94a3b8' }}>
-                      Plan Starter · $7M {!is360 && '← Activo'}
-                    </th>
-                    <th className="p-5" style={{ color: '#d97706', background: 'rgba(251,191,36,0.04)', borderLeft: '1px solid rgba(251,191,36,0.15)' }}>
-                      Plan 360° · $14M {is360 && '⭐ Activo'}
-                    </th>
-                  </tr>
-                </thead>
-                <tbody className="text-sm divide-y" style={{ color: '#374151', borderColor: 'rgba(148,163,184,0.1)' }}>
+            {/* Comparison cards — diseño visual tipo tarjeta */}
+            <div className="grid md:grid-cols-2 gap-4">
+              {/* Plan Starter */}
+              <div className={`rounded-2xl border p-6 transition-all duration-300 ${!is360 ? 'ring-2 ring-sky-400 shadow-lg' : 'hover:-translate-y-0.5'}`}
+                style={{ background: !is360 ? 'rgba(14,165,233,0.03)' : 'rgba(255,255,255,0.8)', borderColor: !is360 ? 'rgba(14,165,233,0.3)' : 'rgba(148,163,184,0.2)' }}>
+                <div className="flex items-center justify-between mb-5">
+                  <div>
+                    <span className="text-[10px] uppercase font-bold tracking-widest" style={{ color: '#64748b' }}>Plan</span>
+                    <h5 className="text-xl font-bold mt-0.5" style={{ color: '#0f172a' }}>Starter</h5>
+                  </div>
+                  <div className="text-right">
+                    <span className="text-2xl font-black font-mono" style={{ color: '#0f172a' }}>$7M</span>
+                    <span className="text-[9px] font-medium block uppercase tracking-wider" style={{ color: '#94a3b8' }}>COP</span>
+                  </div>
+                </div>
+                <div className="space-y-3">
                   {[
-                    { label: 'Inversión inicial', starter: '$7.000.000 COP', full: '$14.000.000 COP — ahorra $5M vs. módulos separados' },
-                    { label: 'Portal Web Quirúrgico', starter: '✅ Landing informativa con catálogo básico', full: '✅ Portal premium con SEO quirúrgico + galería cifrada' },
-                    { label: 'Asistente IA WhatsApp', starter: '⚠️ FAQ básico — responde dudas repetitivas estáticas', full: '✅ Auto-Pilot completo — post-op, recordatorios y fidelización' },
-                    { label: 'CRM Médico Completo', starter: '❌ No incluye', full: '✅ Historias, evolución, fotos, consentimientos digitales' },
-                    { label: 'Consentimientos + Firmas', starter: '❌ PDF plano sin firma digital', full: '✅ Firma electrónica certificada con validez legal plena' },
-                    { label: 'Módulo de Finanzas', starter: '❌ No incluye — registro manual', full: '✅ Dashboard + facturación DIAN + trazabilidad de insumos' },
-                    { label: 'Módulo de Fidelización', starter: '❌ No incluye', full: '✅ Recordatorios cíclicos + programa de referidos automatizado' },
-                    { label: 'Mantenimiento Mensual', starter: '$500.000 COP / mes', full: '$500.000 COP / mes — mismo precio, doble eficiencia' },
-                    { label: 'Resultado Operacional', starter: 'Digital básico — requiere intervención manual del personal', full: '100% piloto automático — máxima seguridad e ingresos estables', highlight: true },
-                  ].map((row, idx) => (
-                    <tr key={idx} className="transition-colors hover:bg-amber-50/30"
-                      style={row.highlight ? { background: 'rgba(251,191,36,0.03)' } : {}}>
-                      <td className="p-5 pl-6 font-semibold" style={{ color: '#0f172a' }}>{row.label}</td>
-                      <td className="p-5" style={{ color: !is360 ? '#374151' : '#94a3b8', background: !is360 ? 'rgba(14,165,233,0.02)' : 'transparent' }}>{row.starter}</td>
-                      <td className="p-5" style={{ color: row.highlight ? '#d97706' : '#374151', fontWeight: row.highlight ? 700 : 400, background: 'rgba(251,191,36,0.03)', borderLeft: '1px solid rgba(251,191,36,0.1)' }}>
-                        {row.full}
-                      </td>
-                    </tr>
+                    { label: 'Portal Web', check: '✅', detail: 'Landing informativa con catálogo básico', good: true },
+                    { label: 'WhatsApp IA', check: '⚠️', detail: 'FAQ básico — dudas repetitivas', good: false },
+                    { label: 'CRM Médico', check: '❌', detail: 'No incluye', good: false },
+                    { label: 'Firmas Electrónicas', check: '❌', detail: 'PDF plano sin firma', good: false },
+                    { label: 'Facturación DIAN', check: '❌', detail: 'No incluye', good: false },
+                    { label: 'Fidelización', check: '❌', detail: 'No incluye', good: false },
+                    { label: 'Mantenimiento', check: '✅', detail: '$500K/mes', good: true },
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-center gap-3 text-xs py-1.5">
+                      <span className={`w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-bold shrink-0
+                        ${item.good ? '' : 'opacity-60'}`}
+                        style={{ background: item.good ? 'rgba(16,185,129,0.1)' : 'rgba(239,68,68,0.06)', color: item.good ? '#059669' : '#ef4444' }}>
+                        {item.check}
+                      </span>
+                      <div>
+                        <span className="font-semibold" style={{ color: '#1e293b' }}>{item.label}</span>
+                        <span className="ml-1.5 font-light" style={{ color: '#64748b' }}>{item.detail}</span>
+                      </div>
+                    </div>
                   ))}
-                </tbody>
-              </table>
+                </div>
+                {!is360 && (
+                  <div className="mt-5 pt-4 border-t text-center" style={{ borderColor: 'rgba(14,165,233,0.15)' }}>
+                    <span className="text-[10px] font-extrabold uppercase tracking-widest" style={{ color: '#0284c7' }}>← Visualizando este plan</span>
+                  </div>
+                )}
+              </div>
+
+              {/* Plan 360° */}
+              <div className={`rounded-2xl border p-6 transition-all duration-300 relative overflow-hidden ${is360 ? 'ring-2 ring-amber-400 shadow-lg' : 'hover:-translate-y-0.5'}`}
+                style={{ background: 'linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(255,251,235,0.6) 100%)', borderColor: is360 ? 'rgba(251,191,36,0.4)' : 'rgba(148,163,184,0.2)' }}>
+                {/* Premium badge */}
+                <div className="absolute -top-3 -right-3 px-4 py-1.5 rounded-bl-xl text-[8px] uppercase font-extrabold tracking-widest"
+                  style={{ background: '#fbbf24', color: '#0f172a', boxShadow: '0 2px 8px rgba(251,191,36,0.3)' }}>
+                  ⭐ RECOMENDADO
+                </div>
+                <div className="flex items-center justify-between mb-5">
+                  <div>
+                    <span className="text-[10px] uppercase font-bold tracking-widest" style={{ color: '#d97706' }}>Plan</span>
+                    <h5 className="text-xl font-bold mt-0.5" style={{ color: '#0f172a' }}>360° Completo</h5>
+                  </div>
+                  <div className="text-right">
+                    <span className="text-2xl font-black font-mono" style={{ color: '#0f172a' }}>$14M</span>
+                    <span className="text-[9px] font-medium block uppercase tracking-wider" style={{ color: '#94a3b8' }}>COP</span>
+                  </div>
+                </div>
+                <div className="space-y-3">
+                  {[
+                    { label: 'Portal Web', check: '✅', detail: 'Premium con SEO quirúrgico + galería cifrada', good: true },
+                    { label: 'WhatsApp IA', check: '✅', detail: 'Auto-Pilot completo: post-op, recordatorios, fidelización', good: true },
+                    { label: 'CRM Médico', check: '✅', detail: 'Historias, evolución, fotos, consentimientos', good: true },
+                    { label: 'Firmas Electrónicas', check: '✅', detail: 'Firma en pantalla + trazabilidad IP/fecha', good: true },
+                    { label: 'Facturación DIAN', check: '✅', detail: 'Dashboard + integración con proveedor timbrador', good: true },
+                    { label: 'Fidelización', check: '✅', detail: 'Recordatorios cíclicos + referidos automatizados', good: true },
+                    { label: 'Mantenimiento', check: '✅', detail: '$500K/mes — mismo precio del Starter', good: true },
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-center gap-3 text-xs py-1.5">
+                      <span className="w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-bold shrink-0"
+                        style={{ background: 'rgba(16,185,129,0.1)', color: '#059669' }}>
+                        {item.check}
+                      </span>
+                      <div>
+                        <span className="font-semibold" style={{ color: '#1e293b' }}>{item.label}</span>
+                        <span className="ml-1.5 font-light" style={{ color: '#64748b' }}>{item.detail}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                {is360 && (
+                  <div className="mt-5 pt-4 border-t text-center" style={{ borderColor: 'rgba(251,191,36,0.15)' }}>
+                    <span className="text-[10px] font-extrabold uppercase tracking-widest" style={{ color: '#d97706' }}>← Visualizando este plan</span>
+                  </div>
+                )}
+              </div>
+            </div>
+
+            {/* Ahorro highlight */}
+            <div className="p-5 rounded-2xl text-center border"
+              style={{ background: 'rgba(251,191,36,0.05)', borderColor: 'rgba(251,191,36,0.2)' }}>
+              <p className="text-sm font-semibold" style={{ color: '#0f172a' }}>
+                {is360
+                  ? 'Comprar el Starter y luego actualizar progresivamente costaría $19M total. El 360° desde ahora te ahorra $5.000.000 COP.'
+                  : 'El Starter es tu puerta de entrada. Cuando quieras escalar, el upgrade al 360° cuesta $7M adicionales — y mantienes todo lo construido.'}
+              </p>
             </div>
 
             {/* Starter CTA para upgrade */}
@@ -655,13 +717,13 @@ export default function ComparisonSales({ activePlan = '360' }: Props) {
             <div className={`grid gap-5 ${is360 ? 'md:grid-cols-2' : 'md:grid-cols-1 max-w-xl mx-auto'}`}>
               {(is360
                 ? [
-                    { num: '01', icon: <Shield className="w-5 h-5" />, title: '3 Meses de Mantenimiento GRATIS', value: '$1.500.000 COP', desc: 'Soporte técnico, servidor y actualizaciones sin costo los primeros 3 meses. Empieza a pagar desde el mes 4, cuando el sistema ya genera retorno.', cost: 'Solo el hosting (~$135.000 COP)', color: { bg: 'rgba(14,165,233,0.05)', border: 'rgba(14,165,233,0.2)', accent: '#0284c7', tag: 'rgba(14,165,233,0.08)' } },
-                    { num: '02', icon: <Star className="w-5 h-5" />, title: 'Módulo de Fidelización GRATIS', value: '$1.000.000 COP', desc: 'Recordatorios cíclicos, reactivación de pacientes inactivos y programa de referidos automatizado. Sus pacientes vuelven solos cada 4–6 meses.', cost: '~1 semana de trabajo ya hecho', color: { bg: 'rgba(99,102,241,0.05)', border: 'rgba(99,102,241,0.2)', accent: '#6366f1', tag: 'rgba(99,102,241,0.08)' } },
-                    { num: '03', icon: <Award className="w-5 h-5" />, title: 'Capacitación VIP + Videos Tutoriales', value: '$800.000 COP', desc: '5 videos tutoriales personalizados para que su recepcionista y usted aprendan el sistema de forma autónoma, grabados con su flujo real de trabajo.', cost: 'Tu tiempo: 5–6 videos de 3 min', color: { bg: 'rgba(251,191,36,0.05)', border: 'rgba(251,191,36,0.2)', accent: '#d97706', tag: 'rgba(251,191,36,0.08)' } },
-                    { num: '04', icon: <ChevronRight className="w-5 h-5" />, title: 'Dominio .com + SSL Configurado GRATIS', value: '$200.000 COP', desc: 'Su dominio www.drwilmer.com configurado, apuntado al servidor y con SSL instalado. Listo desde el primer día de entrega sin costo adicional.', cost: '~$40.000 COP de costo real', color: { bg: 'rgba(16,185,129,0.05)', border: 'rgba(16,185,129,0.2)', accent: '#059669', tag: 'rgba(16,185,129,0.08)' } },
+                    { num: '01', icon: <Shield className="w-5 h-5" />, title: '3 Meses de Mantenimiento GRATIS', value: '$1.500.000 COP', desc: 'Soporte técnico, servidor y actualizaciones sin costo los primeros 3 meses. Empieza a pagar desde el mes 4, cuando el sistema ya genera retorno.', color: { bg: 'rgba(14,165,233,0.05)', border: 'rgba(14,165,233,0.2)', accent: '#0284c7', tag: 'rgba(14,165,233,0.08)' } },
+                    { num: '02', icon: <Star className="w-5 h-5" />, title: 'Módulo de Fidelización GRATIS', value: '$1.000.000 COP', desc: 'Recordatorios cíclicos, reactivación de pacientes inactivos y programa de referidos automatizado. Sus pacientes vuelven solos cada 4–6 meses.', color: { bg: 'rgba(99,102,241,0.05)', border: 'rgba(99,102,241,0.2)', accent: '#6366f1', tag: 'rgba(99,102,241,0.08)' } },
+                    { num: '03', icon: <Award className="w-5 h-5" />, title: 'Capacitación VIP + Videos Tutoriales', value: '$800.000 COP', desc: '5 videos tutoriales personalizados para que su recepcionista y usted aprendan el sistema de forma autónoma, grabados con su flujo real de trabajo.', color: { bg: 'rgba(251,191,36,0.05)', border: 'rgba(251,191,36,0.2)', accent: '#d97706', tag: 'rgba(251,191,36,0.08)' } },
+                    { num: '04', icon: <ChevronRight className="w-5 h-5" />, title: 'Dominio .com + SSL Configurado GRATIS', value: '$200.000 COP', desc: 'Su dominio www.drwilmer.com configurado, apuntado al servidor y con SSL instalado. Listo desde el primer día de entrega sin costo adicional.', color: { bg: 'rgba(16,185,129,0.05)', border: 'rgba(16,185,129,0.2)', accent: '#059669', tag: 'rgba(16,185,129,0.08)' } },
                   ]
                 : [
-                    { num: '01', icon: <Zap className="w-5 h-5" />, title: '1 Mes de Mantenimiento GRATIS', value: '$500.000 COP', desc: 'El primer mes de soporte técnico, actualizaciones y ajustes post-entrega va incluido sin costo. Ideal para estabilizar el sistema y resolver cualquier detalle antes de arrancar a pagar.', cost: 'Solo el hosting (~$45.000 COP)', color: { bg: 'rgba(14,165,233,0.05)', border: 'rgba(14,165,233,0.2)', accent: '#0284c7', tag: 'rgba(14,165,233,0.08)' } },
+                    { num: '01', icon: <Zap className="w-5 h-5" />, title: '1 Mes de Mantenimiento GRATIS', value: '$500.000 COP', desc: 'El primer mes de soporte técnico, actualizaciones y ajustes post-entrega va incluido sin costo. Ideal para estabilizar el sistema y resolver cualquier detalle antes de arrancar a pagar.', color: { bg: 'rgba(14,165,233,0.05)', border: 'rgba(14,165,233,0.2)', accent: '#0284c7', tag: 'rgba(14,165,233,0.08)' } },
                   ]
               ).map((bono) => (
                 <div
@@ -702,14 +764,6 @@ export default function ComparisonSales({ activePlan = '360' }: Props) {
                       {bono.desc}
                     </p>
                   </div>
-                  <div className="mt-4 pt-3 border-t border-dashed flex justify-between items-center text-[10px]" style={{ borderColor: bono.color.border }}>
-                    <span className="font-semibold" style={{ color: '#64748b' }}>
-                      Costo real para mí:
-                    </span>
-                    <span className="font-bold font-mono" style={{ color: '#0f172a' }}>
-                      {bono.cost}
-                    </span>
-                  </div>
                 </div>
               ))}
             </div>
@@ -724,10 +778,6 @@ export default function ComparisonSales({ activePlan = '360' }: Props) {
                     <p className="text-3xl font-black font-mono" style={{ color: '#ffffff' }}>{is360 ? '$3.500.000' : '$500.000'} COP</p>
                   </div>
                   <span className="text-3xl font-light" style={{ color: '#334155' }}>·</span>
-                  <div className="text-center">
-                    <p className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: '#64748b' }}>Costo real para mí</p>
-                    <p className="text-3xl font-black font-mono" style={{ color: '#4ade80' }}>{is360 ? '~$135.000' : '~$45.000'} COP</p>
-                  </div>
                 </div>
 
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl mb-6 text-xs font-bold"

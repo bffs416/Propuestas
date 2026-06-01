@@ -7,7 +7,7 @@ import Objective from '@/components/landing/objective';
 import Services from '@/components/landing/services';
 import Investment from '@/components/landing/investment';
 import ComparisonSales from '@/components/landing/comparison-sales';
-import SystemFlow from '@/components/landing/system-flow';
+import TimelineFlow from '@/components/landing/timeline-flow';
 import Benefits from '@/components/landing/benefits';
 import Footer from '@/components/landing/footer';
 import { wilmer360ProposalData, wilmerEconomicaProposalData } from '@/lib/proposal-data';
@@ -23,12 +23,22 @@ export default function DrWilmerMunozProposalPage() {
       <Header proposalData={currentProposalData} />
       
       <main className="max-w-6xl mx-auto px-6 mt-16 relative">
-        {/* Premium Plan Toggle Switch */}
-        <div className="w-full flex flex-col items-center mb-12 relative z-20">
+        <Hero proposalData={currentProposalData} />
+        <TimelineFlow />
+        <Objective proposalData={currentProposalData} />
+
+        <div className="space-y-24">
+          <Services proposalData={currentProposalData} />
+        </div>
+
+        <Investment proposalData={currentProposalData} />
+
+        {/* ── Toggle de Planes (aparece DESPUÉS de la inversión) ── */}
+        <div className="w-full flex flex-col items-center my-16 relative z-20 pt-8 border-t border-slate-200">
           <span className="text-[10px] uppercase font-bold tracking-[0.3em] text-slate-500 mb-4">
-            Selecciona la propuesta que deseas revisar
+            ¿Prefieres una opción más accesible? Compara los planes
           </span>
-          
+
           <div className="flex p-2 bg-blue-50/60 border border-blue-100/80 rounded-[2.5rem] shadow-lg relative max-w-xl w-full backdrop-blur-md">
             {/* Economica / Starter Pill */}
             <button
@@ -65,7 +75,7 @@ export default function DrWilmerMunozProposalPage() {
               <span className="absolute -top-3 px-3 py-0.5 bg-yellow-400 text-slate-950 text-[9px] uppercase font-bold rounded-full tracking-widest flex items-center gap-1 shadow-md shadow-yellow-400/25 border border-yellow-300">
                 <Star className="w-2.5 h-2.5 fill-slate-950 text-slate-950" /> Recomendado
               </span>
-              
+
               <span className="text-xs uppercase font-bold tracking-wider mb-1">
                 Plan 360° (Completa)
               </span>
@@ -81,26 +91,16 @@ export default function DrWilmerMunozProposalPage() {
               </span>
             </button>
           </div>
-          
+
           {/* Dynamic Switch Notice */}
           <p className="text-xs text-slate-500 mt-4 text-center max-w-md leading-relaxed font-light">
-            {activePlan === '360' 
-              ? '✓ Estás visualizando la propuesta integral de alta gama que incluye los 9 módulos avanzados de seguridad, automatizaciones CRM e integraciones post-op.' 
+            {activePlan === '360'
+              ? '✓ Estás visualizando la propuesta integral de alta gama que incluye los 9 módulos avanzados de seguridad, automatizaciones CRM e integraciones post-op.'
               : '✓ Estás visualizando la propuesta Starter enfocada en control digital inicial y portal web informativo con pre-consulta en WhatsApp.'
             }
           </p>
         </div>
 
-        {/* Dynamic Rendered Content */}
-        <Hero proposalData={currentProposalData} />
-        <SystemFlow />
-        <Objective proposalData={currentProposalData} />
-        
-        <div className="space-y-24">
-          <Services proposalData={currentProposalData} />
-        </div>
-        
-        <Investment proposalData={currentProposalData} />
         <ComparisonSales activePlan={activePlan} />
         <Benefits proposalData={currentProposalData} />
       </main>

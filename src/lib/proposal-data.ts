@@ -821,9 +821,9 @@ export const wilmerEconomicaProposalData = {
         {
           "titulo": "No incluye",
           "items": [
-            "Firmas electrónicas con validez legal certificada (solo guardado en PDF estándar).",
+            "Firma electrónica avanzada con trazabilidad (firma dibujada en pantalla, IP, fecha/hora, dispositivo). En el plan Starter la firma se maneja como PDF estándar.",
             "Dashboard financiero de analítica avanzada o módulo de inventarios de insumos.",
-            "Módulo de facturación electrónica integrado compatible con la DIAN."
+            "Módulo de facturación electrónica. Si se requiere en el futuro, se integra con un proveedor DIAN (Wompi, Máximo o Siigo) cuyo plan mensual corre por cuenta del Dr. Muñoz."
           ]
         }
       ],
@@ -951,9 +951,10 @@ export const wilmerEconomicaProposalData = {
         "Propiedad Intelectual: El Dr. Wilmer Muñoz es dueño del 100% del código fuente y bases de datos. Puede cancelar el mantenimiento cuando desee y migrar el sistema.",
         "Tratamiento de Datos (Ley 1581): El desarrollador actúa como Encargado de datos. La clínica actúa como Responsable legal. La responsabilidad máxima del desarrollador se limita al valor pagado en los últimos 12 meses.",
         "Soporte y Mantenimiento Incluido: Los primeros 3 meses de mantenimiento y soporte técnico van incluidos 100% gratis dentro del valor del desarrollo inicial.",
-        "Mantenimiento Mensual (A partir del Mes 4): COP 500.000 mensuales. Es de carácter voluntario (para siempre mientras el Dr. Muñoz desee soporte técnico activo).",
-        "El Mantenimiento Incluye: Servidor VPS dedicado de Hostinger Colombia, copias de seguridad diarias automáticas, certificado de seguridad SSL/HTTPS, monitoreo de seguridad 24/7 ante caídas/ataques, ajustes rápidos de respuestas de la IA, actualizaciones del sistema y soporte técnico vía chat/correo con respuesta garantizada en menos de 24 horas.",
-        "El Mantenimiento No Incluye: Nuevas funcionalidades o integraciones (micro-ajustes de <30 minutos se realizan gratis; nuevos módulos o desarrollos se cotizan por separado según su alcance)."
+        "Mantenimiento Mensual (A partir del Mes 4): COP 500.000 mensuales. Es de carácter voluntario — el Dr. Muñoz decide mes a mes si continúa con soporte técnico activo.",
+        "El Mantenimiento Incluye: Servidor VPS dedicado con datacenter en Colombia, copias de seguridad diarias automáticas, certificado de seguridad SSL/HTTPS, monitoreo de seguridad 24/7 ante caídas/ataques, ajustes rápidos de respuestas de la inteligencia artificial, actualizaciones del sistema y soporte técnico vía chat/correo con respuesta garantizada en menos de 24 horas.",
+        "El Mantenimiento No Incluye: Nuevas funcionalidades o integraciones (micro-ajustes de <30 minutos se realizan gratis; nuevos módulos o desarrollos se cotizan por separado según su alcance).",
+        "Costos de Terceros a Cargo Directo del Dr. Muñoz: El plan del proveedor de facturación electrónica (Wompi/Máximo/Siigo) si se requiere en el futuro, consumo de mensajes de WhatsApp Business, consumo de API de inteligencia artificial (~$3 USD/mes), y cualquier otro servicio externo no incluido explícitamente en el desarrollo."
       ]
     }
   ]
@@ -999,9 +1000,10 @@ export const wilmer360ProposalData = {
         {
           "titulo": "Incluye",
           "items": [
-            "Sistema digital de consentimientos informados con firmas electrónicas legales.",
+            "Sistema digital de consentimientos informados con firma electrónica integrada (el paciente recibe el PDF por WhatsApp, lo lee y firma dibujando con el dedo en su celular. Queda registrado: firma, fecha/hora, IP y dispositivo). Sin costo adicional por firma — desarrollo propio, no depende de entidades externas.",
             "Autorización de Uso de Imagen de pacientes (módulo legal crítico gineco-estético/quirúrgico).",
-            "Módulo de Facturación y Pagos Integrados compatible con facturación electrónica DIAN.",
+            "Módulo de Facturación: el CRM se integra vía API con un proveedor DIAN (Wompi/Máximo/Siigo). El CRM envía los datos de la factura, el proveedor timbra electrónicamente ante la DIAN y el CRM archiva el PDF+XML resultado. El CRM NO emite facturas directamente (no tiene habilitación DIAN).",
+            "El costo del plan del proveedor de facturación (Wompi/Máximo/Siigo) corre por cuenta directa del Dr. Muñoz (~$0 – $150.000/mes según el proveedor). El desarrollo de la integración está incluido en este servicio.",
             "Inventario y Control de Insumos Médicos para control de stock del consultorio."
           ]
         },
@@ -1016,9 +1018,7 @@ export const wilmer360ProposalData = {
         {
           "titulo": "No incluye",
           "items": [
-            "Cargos por emisión de firmas electrónicas adicionales de entidades certificadoras.",
-            "Pago de tasas, impuestos o software externo de contabilidad ajeno al desarrollo.",
-            "Dispositivos móviles o hardware de recolección de firmas en físico."
+            "El plan mensual del proveedor de facturación electrónica (Wompi/Máximo/Siigo) corre por cuenta del Dr. Muñoz, NO está incluido en el desarrollo ni en el mantenimiento mensual."
           ]
         }
       ],
@@ -1142,14 +1142,14 @@ export const wilmer360ProposalData = {
       "tipo": "texto",
       "contenido": [
         "Validez de esta propuesta: 30 días calendario a partir de su emisión.",
-        "Plan de Pagos Estándar: 40% al inicio del desarrollo, 30% contra entrega de demo funcional (semana 5) y 30% contra entrega final operativa (semana 12).",
+        "Plan de Pagos Estándar: 50% al inicio del desarrollo y 50% contra entrega final operativa (semana 6).",
         "Propiedad Intelectual: El Dr. Wilmer Muñoz es dueño exclusivo del 100% del código fuente, bases de datos y registros médicos. Puede cancelar el mantenimiento o migrar de servidor cuando lo decida.",
         "Tratamiento de Datos (Ley 1581): El desarrollador actúa como Encargado de datos. La clínica actúa como Responsable legal. La responsabilidad máxima del desarrollador se limita al valor pagado en los últimos 12 meses.",
-        "Arquitectura Técnica Incorporada: Servidor VPS dedicado de Hostinger Colombia de alto rendimiento, Evolution API y procesamiento de Inteligencia Artificial (DeepSeek).",
-        "Estimado de Costos de Terceros: Consumo de la API de DeepSeek (~$3 USD/mes promedio), APIs externas y firmas electrónicas DIAN a cargo directo de la clínica.",
+        "CRONOGRAMA DE ENTREGA — 6 SEMANAS: Semana 1 (Setup + CRM base + Página Web), Semana 2 (WhatsApp IA + Agenda), Semana 3 (Recordatorios + Post-Op + Encuestas NPS), Semana 4 (Dashboard + Firmas + Pipeline Leads), Semana 5 (Facturación DIAN + Inventario + Galería Blindada), Semana 6 (Antiihack + PWA + Pruebas finales + Despliegue). El Dr. tendrá un sistema funcional desde la semana 3.",
+        "Estimado de Costos de Terceros (a cargo directo del Dr. Muñoz): plan de facturación electrónica con Wompi/Máximo/Siigo (~$0 – $150.000 COP/mes), consumo de mensajes de WhatsApp Business (~$10 – $50 USD/mes según volumen), firmas electrónicas certificadas (~$2.000 – $5.000 COP por firma) y API de inteligencia artificial (~$3 USD/mes).",
         "Soporte y Mantenimiento Incluido: Los primeros 3 meses de mantenimiento técnico y soporte van 100% incluidos gratis dentro del valor de desarrollo.",
-        "Mantenimiento Mensual Fijo (A partir del Mes 4): COP 500.000 mensuales. De carácter voluntario (activo mientras el Dr. Muñoz desee soporte técnico prioritario).",
-        "El Mantenimiento Incluye: Hosting en servidor VPS dedicado (Hostinger Colombia), copias de seguridad diarias automatizadas de datos clínicos y fotos, certificado SSL/HTTPS, monitoreo de seguridad contra ataques 24/7, soporte técnico prioritario (<24h), ajustes de respuestas de la IA y actualizaciones periódicas del sistema.",
+        "Mantenimiento Mensual Fijo (A partir del Mes 4): COP 500.000 mensuales. De carácter voluntario — el Dr. Muñoz decide mes a mes si continúa con soporte técnico activo.",
+        "El Mantenimiento Incluye: Hosting en servidor VPS dedicado con datacenter en Colombia, copias de seguridad diarias automatizadas de datos clínicos y fotos, certificado SSL/HTTPS, monitoreo de seguridad contra ataques 24/7, soporte técnico prioritario (<24h), ajustes de respuestas de la inteligencia artificial y actualizaciones periódicas del sistema.",
         "El Mantenimiento No Incluye: Nuevas funcionalidades (micro-ajustes de <30 minutos se realizan gratis; nuevos módulos o desarrollos más grandes se cotizan de forma independiente)."
       ]
     }
