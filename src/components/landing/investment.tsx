@@ -157,7 +157,7 @@ export default function Investment({ proposalData }: { proposalData: ProposalDat
               </p>
               <p className="text-[11px] text-slate-400 leading-relaxed mt-2 uppercase tracking-tighter">
                 {proposalData.ref === 'WILMER_360_2026' ? (
-                  <>Implementación completa en 12 semanas (60 días hábiles) tras recepción de materiales técnicos.</>
+                  <>Implementación completa en 6 semanas (30 días hábiles) tras recepción de materiales técnicos.</>
                 ) : (
                   <>Implementación completa en 25 días hábiles tras recepción de materiales técnicos.</>
                 )}
