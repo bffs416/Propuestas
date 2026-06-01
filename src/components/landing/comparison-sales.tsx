@@ -587,7 +587,7 @@ export default function ComparisonSales({ activePlan = '360' }: Props) {
                     { label: 'Firmas Electrónicas', check: '❌', detail: 'PDF plano sin firma', good: false },
                     { label: 'Facturación DIAN', check: '❌', detail: 'No incluye', good: false },
                     { label: 'Fidelización', check: '❌', detail: 'No incluye', good: false },
-                    { label: 'Mantenimiento', check: '✅', detail: '$500K/mes', good: true },
+                    { label: 'Mantenimiento', check: '✅', detail: '1 Mes GRATIS (luego $500K/mes)', good: true },
                   ].map((item, i) => (
                     <div key={i} className="flex items-center gap-3 text-xs py-1.5">
                       <span className={`w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-bold shrink-0
@@ -635,7 +635,7 @@ export default function ComparisonSales({ activePlan = '360' }: Props) {
                     { label: 'Firmas Electrónicas', check: '✅', detail: 'Firma en pantalla + trazabilidad IP/fecha', good: true },
                     { label: 'Facturación DIAN', check: '✅', detail: 'Dashboard + integración con proveedor timbrador', good: true },
                     { label: 'Fidelización', check: '✅', detail: 'Recordatorios cíclicos + referidos automatizados', good: true },
-                    { label: 'Mantenimiento', check: '✅', detail: '$500K/mes — mismo precio del Starter', good: true },
+                    { label: 'Mantenimiento', check: '✅', detail: '3 Meses GRATIS (luego $500K/mes)', good: true },
                   ].map((item, i) => (
                     <div key={i} className="flex items-center gap-3 text-xs py-1.5">
                       <span className="w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-bold shrink-0"
