@@ -213,16 +213,8 @@ const metricasAntesDespues = [
   { metrica: "Tiempo buscando historias clínicas", antes: "5-10 min", despues: "2 segundos", impacto: "Eficiencia total", color: "#ef4444" }
 ];
 
-type ActorKey = 'todos' | 'paciente' | 'ia' | 'sistema' | 'dr';
-
 export default function SystemFlow() {
-  const [selectedActor, setSelectedActor] = useState<ActorKey>('todos');
   const [activeStep, setActiveStep] = useState<number>(1);
-
-  const filteredEtapas = etapasData.filter(etapa => {
-    if (selectedActor === 'todos') return true;
-    return resumenActores[selectedActor].stages.includes(etapa.id);
-  });
 
   const activeEtapaInfo = etapasData.find(e => e.id === activeStep) || etapasData[0];
 
@@ -249,41 +241,8 @@ export default function SystemFlow() {
         </h3>
         
         <p className="text-center max-w-2xl mx-auto text-slate-400 text-sm md:text-base font-light mb-12 leading-relaxed">
-          El viaje digital completo: desde que un paciente potencial busca en Google hasta que recomienda la clínica a sus contactos. Selecciona un actor o haz clic en cualquier paso para ver el flujo técnico que opera por detrás.
+          El viaje digital completo: desde que un paciente potencial busca en Google hasta que recomienda la clínica a sus contactos. Haz clic en cualquier paso para ver el flujo técnico que opera por detrás.
         </p>
-
-        {/* Actor Filter Bar */}
-        <div className="flex flex-wrap justify-center gap-2 mb-10 max-w-3xl mx-auto p-1.5 rounded-2xl bg-slate-950/80 border border-slate-800/60 backdrop-blur-md">
-          {(Object.keys(resumenActores) as ActorKey[]).map((actorKey) => {
-            const actor = resumenActores[actorKey];
-            const isSelected = selectedActor === actorKey;
-            const ActorIcon = actor.icon;
-            
-            return (
-              <button
-                key={actorKey}
-                onClick={() => {
-                  setSelectedActor(actorKey);
-                  // Auto-select first stage of this actor
-                  if (actorKey !== 'todos' && 'stages' in actor) {
-                    setActiveStep(actor.stages[0]);
-                  } else {
-                    setActiveStep(1);
-                  }
-                }}
-                className="flex-1 min-w-[130px] flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-xs font-bold transition-all duration-300 border"
-                style={
-                  isSelected
-                    ? { background: 'white', color: '#0f172a', borderColor: 'white', boxShadow: '0 4px 15px rgba(255,255,255,0.1)' }
-                    : { background: 'transparent', color: '#94a3b8', borderColor: 'transparent' }
-                }
-              >
-                <ActorIcon className="w-4 h-4" />
-                {actor.label}
-              </button>
-            );
-          })}
-        </div>
 
         {/* Main Flow Layout */}
         <div className="grid lg:grid-cols-12 gap-8 items-start mb-16">
@@ -292,16 +251,13 @@ export default function SystemFlow() {
           <div className="lg:col-span-5 space-y-2.5 max-h-[520px] overflow-y-auto pr-2 custom-scrollbar">
             {etapasData.map((etapa) => {
               const isActive = activeStep === etapa.id;
-              const isFilteredOut = selectedActor !== 'todos' && !resumenActores[selectedActor].stages.includes(etapa.id);
               const Icon = etapa.iconName;
 
               return (
                 <button
                   key={etapa.id}
                   onClick={() => setActiveStep(etapa.id)}
-                  className={`w-full text-left p-4 rounded-xl transition-all duration-300 border flex items-center justify-between gap-4 group ${
-                    isFilteredOut ? 'opacity-30 hover:opacity-50' : 'opacity-100'
-                  }`}
+                  className="w-full text-left p-4 rounded-xl transition-all duration-300 border flex items-center justify-between gap-4 group opacity-100"
                   style={
                     isActive
                       ? {
