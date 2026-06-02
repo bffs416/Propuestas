@@ -34,8 +34,8 @@ interface Props {
 const valueArgs360 = {
   dinero: [
     {
-      title: 'Se paga con 2–3 cirugías',
-      quote: 'Doctor, $14.000.000 son apenas 2 o 3 cirugías. Después de eso, el sistema completo se pagó solo y todo lo demás es ganancia pura cada mes.',
+      title: 'Se paga con 2–3 tratamientos de alto valor',
+      quote: 'Doctor, $14.000.000 son apenas 2 o 3 tratamientos. Después de eso, el sistema completo se pagó solo y todo lo demás es ganancia pura cada mes.',
       tag: 'Retorno Directo', metric: '2–3 Pacientes',
     },
     {
@@ -50,7 +50,7 @@ const valueArgs360 = {
     },
     {
       title: 'ROI en menos de 6 meses',
-      quote: 'Con reducir inasistencias un 30% gracias a los recordatorios de IA, recupera la inversión antes del mes 6. Una sola cirugía que no se cancela son $5M–$8M recuperados.',
+      quote: 'Con reducir inasistencias un 30% gracias a los recordatorios de IA, recupera la inversión antes del mes 6. Un solo procedimiento de alto valor que no se cancela son $3M–$5M recuperados.',
       tag: 'Eficiencia', metric: 'ROI < 6 Meses',
     },
     {
@@ -61,8 +61,8 @@ const valueArgs360 = {
   ],
   tiempo: [
     {
-      title: 'Piloto automático entre cirugías',
-      quote: 'Usted entra a sala de operaciones. Cuando sale, la IA ya agendó 3 pacientes nuevos, confirmó 5 citas de control y envió 10 recomendaciones de post-operatorio. Sin mover un solo dedo.',
+      title: 'Piloto automático entre consultas',
+      quote: 'Usted atiende su consulta o procedimiento capilar. Cuando termina, la IA ya agendó 3 pacientes nuevos, confirmó 5 citas de control y envió 10 recomendaciones de post-tratamiento. Sin mover un solo dedo.',
       tag: 'Automatización Total', metric: '100% Piloto Auto',
     },
     {
@@ -122,8 +122,8 @@ const valueArgs360 = {
   ],
   emocional: [
     {
-      title: 'Paz quirúrgica garantizada',
-      quote: 'Doctor, usted entra a sala sabiendo que en el exterior su clínica, sus citas, su chatbot y sus finanzas están operando solos, de forma perfecta y en piloto automático. Eso no tiene precio.',
+      title: 'Paz clínica garantizada',
+      quote: 'Doctor, usted atiende sus consultas y procedimientos sabiendo que en el exterior su clínica, sus citas, su chatbot y sus finanzas están operando solos, de forma perfecta y en piloto automático. Eso no tiene precio.',
       tag: 'Paz Mental', metric: 'Cero Estrés',
     },
     {
@@ -143,7 +143,7 @@ const valueArgsStarter = {
   dinero: [
     {
       title: 'El punto de entrada inteligente',
-      quote: 'Doctor, $7.000.000 son una o dos cirugías. Por ese precio, su clínica arranca con presencia digital profesional y un asistente IA que responde WhatsApp 24/7 — sin necesitar más personal.',
+      quote: 'Doctor, $7.000.000 son uno o dos tratamientos capilares o estéticos. Por ese precio, su clínica arranca con presencia digital profesional y un asistente IA que responde WhatsApp 24/7 — sin necesitar más personal.',
       tag: 'Inversión Inicial', metric: '1–2 Pacientes',
     },
     {
@@ -153,7 +153,7 @@ const valueArgsStarter = {
     },
     {
       title: 'El Starter se paga con 1 paciente',
-      quote: 'Una sola cirugía o procedimiento estético cubre la inversión total del Plan Starter. A partir del segundo paciente, el sistema está generando retorno puro mes a mes.',
+      quote: 'Un solo procedimiento estético o tricológico cubre la inversión total del Plan Starter. A partir del segundo paciente, el sistema está generando retorno puro mes a mes.',
       tag: 'ROI Inmediato', metric: '1 Paciente = ROI',
     },
     {
@@ -187,7 +187,7 @@ const valueArgsStarter = {
     },
     {
       title: 'Pacientes más informados = menos conflictos',
-      quote: 'El portal informa procedimientos, tiempos de recuperación y cuidados post-operatorios con claridad. Un paciente bien informado antes de la cirugía genera menos quejas y expectativas mejor alineadas.',
+      quote: 'El portal informa procedimientos, tiempos de recuperación y cuidados post-tratamiento con claridad. Un paciente bien informado antes de su cita genera menos quejas y expectativas mejor alineadas.',
       tag: 'Educación Digital', metric: 'Menos Fricciones',
     },
     {
@@ -209,7 +209,7 @@ const valueArgsStarter = {
     },
     {
       title: 'Diferenciarse de la competencia hoy',
-      quote: 'La mayoría de cirujanos estéticos en Colombia no tienen automatización de WhatsApp ni portal SEO. Adoptar el Starter hoy posiciona al Dr. Muñoz con 2–3 años de ventaja tecnológica sobre su competencia directa.',
+      quote: 'La mayoría de médicos estéticos y tricólogos en Colombia no tienen automatización de WhatsApp ni portal SEO. Adoptar el Starter hoy posiciona al Dr. Muñoz con 2–3 años de ventaja tecnológica sobre su competencia directa.',
       tag: 'Ventaja', metric: '2 Años Adelante',
     },
   ],
@@ -437,7 +437,7 @@ export default function ComparisonSales({ activePlan = '360' }: Props) {
                       ]
                     : [
                         { strong: 'Portal web profesional activo:', desc: 'Su presencia digital trabaja sola 24/7: informa procedimientos, genera confianza y captura leads sin intervención.' },
-                        { strong: 'Diferenciación inmediata:', desc: 'La mayoría de cirujanos no tienen automatización de WhatsApp. El Starter posiciona al Dr. Muñoz 2 años adelante de su competencia.' },
+                        { strong: 'Diferenciación inmediata:', desc: 'La mayoría de especialistas no tienen automatización de WhatsApp. El Starter posiciona al Dr. Muñoz 2 años adelante de su competencia.' },
                       ]
                   ),
                 ].map((item, idx) => (
@@ -515,7 +515,7 @@ export default function ComparisonSales({ activePlan = '360' }: Props) {
               </table>
             </div>
             <p className="text-xs text-center leading-relaxed" style={{ color: '#94a3b8' }}>
-              * HubSpot es excelente para marketing B2B corporativo genérico, pero no tiene capacidad nativa de gestionar pacientes, insumos de cirugía ni normativa médica colombiana.
+              * HubSpot es excelente para marketing B2B corporativo genérico, pero no tiene capacidad nativa de gestionar pacientes, insumos médicos ni normativa médica colombiana.
             </p>
           </div>
         )}

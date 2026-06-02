@@ -772,7 +772,7 @@ export const wilmerEconomicaProposalData = {
   "hero_frase": "La longevidad como puerta de entrada. Ecosistema digital exclusivo diseñado para proyectar la ciencia y exclusividad del Método RIEE.",
   "cliente": {
     "nombre": "Dr. Wilmer Muñoz",
-    "especialidad": "Cirugía Plástica y Medicina Estética"
+    "especialidad": "Médico Estético y Tricólogo Especialista"
   },
   "bloques": [
     {
@@ -781,7 +781,7 @@ export const wilmerEconomicaProposalData = {
       "tipo": "texto",
       "contenido": [
         "Proyectar con autoridad el Método RIEE (Ruta Integral para el Envejecimiento y Rejuvenecimiento Exitoso) y captar pacientes de alto valor bajo la premisa: 'Este no es un lugar para hacerse algo... es un lugar para confiar el paso del tiempo'.",
-        "Estructurar los canales de comunicación basándose en los 5 pilares: Medicina Integrativa, Medicina Bioreguladora, Medicina Regenerativa, Cirugía Avanzada y Medicina Antiage.",
+        "Estructurar los canales de comunicación basándose en los 5 pilares: Medicina Integrativa, Medicina Bioreguladora, Medicina Regenerativa, Tricología Especializada y Medicina Antiage.",
         "Implementar un CRM médico para control digital inicial de pacientes y un asistente IA básico en WhatsApp para atención al instante y pre-filtrado de citas."
       ]
     },
@@ -864,7 +864,7 @@ export const wilmerEconomicaProposalData = {
           "titulo": "Incluye técnicamente",
           "items": [
             "Diseño UI/UX estándar y programación de landing page (Next.js responsivo).",
-            "Catálogo informativo de procedimientos estéticos y quirúrgicos principales.",
+            "Catálogo informativo de procedimientos estéticos, capilares y preventivos principales.",
             "Formulario de contacto básico conectado al correo electrónico de la clínica.",
             "Entrenamiento de la IA con respuestas a dudas frecuentes de la consulta del Dr. Muñoz.",
             "Botón flotante de WhatsApp e integración con la API de mensajería."
@@ -967,7 +967,7 @@ export const wilmer360ProposalData = {
   "hero_frase": "La longevidad como puerta de entrada. Ecosistema digital premium de alta gama diseñado para capturar la esencia del exclusivo Método RIEE y fidelizar Pacientes de Alto Valor.",
   "cliente": {
     "nombre": "Dr. Wilmer Muñoz",
-    "especialidad": "Cirugía Plástica y Medicina Estética"
+    "especialidad": "Médico Estético y Tricólogo Especialista"
   },
   "bloques": [
     {
@@ -976,8 +976,8 @@ export const wilmer360ProposalData = {
       "tipo": "texto",
       "contenido": [
         "Proyectar con máxima autoridad científica y médica el exclusivo Método RIEE (Ruta Integral para el Envejecimiento y Rejuvenecimiento Exitoso) bajo la filosofía: 'Este no es un lugar para hacerse algo... es un lugar para confiar el paso del tiempo'.",
-        "Estructurar toda la presencia de cara al paciente en torno a tus 5 pilares clínicos principales: Medicina Integrativa, Medicina Bioreguladora, Medicina Regenerativa, Cirugía Avanzada y Medicina Antiage.",
-        "Implementar un CRM médico avanzado (con control de inventario, facturación DIAN, firmas electrónicas y módulo de imagen) acoplado a un Asistente IA 360° en WhatsApp para atención pre y post-quirúrgica, fidelización y reactivación automática de leads."
+        "Estructurar toda la presencia de cara al paciente en torno a tus 5 pilares clínicos principales: Medicina Integrativa, Medicina Bioreguladora, Medicina Regenerativa, Tricología Especializada y Medicina Antiage.",
+        "Implementar un CRM médico avanzado (con control de inventario, facturación DIAN, firmas electrónicas y módulo de imagen) acoplado a un Asistente IA 360° en WhatsApp para atención pre y post-consulta, fidelización y reactivación automática de leads."
       ]
     },
     {
@@ -992,7 +992,7 @@ export const wilmer360ProposalData = {
         {
           "titulo": "Desarrollo",
           "items": [
-            "Arquitectura del CRM médico avanzada y adaptada a cirugía plástica.",
+            "Arquitectura del CRM médico avanzada y adaptada a medicina estética y capilar.",
             "Panel de control privado y dashboard financiero gerencial para análisis clínico.",
             "Configuración y optimización de base de datos en nube cifrada de alto rendimiento."
           ]
@@ -1001,7 +1001,7 @@ export const wilmer360ProposalData = {
           "titulo": "Incluye",
           "items": [
             "Sistema digital de consentimientos informados con firma electrónica integrada (el paciente recibe el PDF por WhatsApp, lo lee y firma dibujando con el dedo en su celular. Queda registrado: firma, fecha/hora, IP y dispositivo). Sin costo adicional por firma — desarrollo propio, no depende de entidades externas.",
-            "Autorización de Uso de Imagen de pacientes (módulo legal crítico gineco-estético/quirúrgico).",
+            "Autorización de Uso de Imagen de pacientes (módulo legal crítico estético/tricológico).",
             "Integración Nativa con Siigo Nube API: El CRM se integra vía API para sincronizar pacientes como terceros, crear y actualizar facturas de venta, enviarlas automáticamente a la DIAN/paciente y sincronizar recibos de caja y notas crédito. El CRM NO actúa como timbrador directo (no tiene habilitación DIAN), sino que automatiza la operación de tu cuenta de Siigo.",
             "El plan mensual de la API de Siigo Nube corre por cuenta directa de la clínica (~$0 – $150.000 COP/mes según el plan contratado con Siigo). El desarrollo y configuración de la integración están incluidos en este servicio.",
             "Inventario y Control de Insumos Médicos para control de stock del consultorio."
@@ -1035,7 +1035,7 @@ export const wilmer360ProposalData = {
       "feature_cards": [
         {
           "title": "Portal Web Premium",
-          "description": "Diseño exclusivo minimalista con galería protegida de antes y después y SEO quirúrgico.",
+          "description": "Diseño exclusivo minimalista con galería protegida de antes y después y SEO especializado.",
           "icon": "LayoutTemplate"
         },
         {
@@ -1045,7 +1045,7 @@ export const wilmer360ProposalData = {
         },
         {
           "title": "Seguimiento & Post-Op",
-          "description": "Alertas y envío automático de cuidados y recomendaciones post-operatorias directas a chat.",
+          "description": "Alertas y envío automático de cuidados y recomendaciones post-procedimiento directas a chat.",
           "icon": "Clock"
         },
         {
@@ -1129,7 +1129,7 @@ export const wilmer360ProposalData = {
         },
         {
           "title": "Retorno Garantizado",
-          "description": "Se paga de forma estimada con la captación de menos de 3 cirugías estéticas.",
+          "description": "Se paga de forma estimada con la captación de menos de 3 tratamientos estéticos o capilares de alto valor.",
           "icon": "Target",
           "iconBg": "bg-red-100",
           "iconColor": "text-red-600"
