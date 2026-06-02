@@ -12,6 +12,7 @@ const phoneToSlug: Record<string, string> = {
   '3104950697': '/mildred-moreno',
   '3173655829': '/mercy-quezada',
   '3116285777': '/dr-wilmer-munoz',
+  'elaiagroup': '/aptos',
 };
 
 export default function LoginPage() {
@@ -21,14 +22,15 @@ export default function LoginPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const path = phoneToSlug[phone];
+    const key = phone.trim().toLowerCase();
+    const path = phoneToSlug[key];
     if (path) {
       router.push(path);
     } else {
       toast({
         title: 'Acceso Denegado',
         description:
-          'El número de teléfono no está asociado a ninguna propuesta.',
+          'El número de teléfono o código de acceso no está asociado a ninguna propuesta.',
         variant: 'destructive',
       });
     }
@@ -43,7 +45,7 @@ export default function LoginPage() {
             Acceso a Propuesta
           </h1>
           <p className="text-slate-500">
-            Por favor, ingrese el número de teléfono asociado a su propuesta para
+            Por favor, ingrese el número de teléfono o código de acceso asociado a su propuesta para
             continuar.
           </p>
         </div>
@@ -57,17 +59,17 @@ export default function LoginPage() {
               htmlFor="phone"
               className="text-sm font-medium text-slate-700 sr-only"
             >
-              Número de Teléfono
+              Número de Teléfono o Código
             </label>
             <Input
               id="phone"
-              type="tel"
+              type="text"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              placeholder="Ej: 3012345678"
+              placeholder="Ej: 3012345678 o código de acceso"
               required
               className="text-center text-lg h-14"
-              autoComplete="tel"
+              autoComplete="off"
             />
           </div>
           <Button
