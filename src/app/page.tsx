@@ -11,11 +11,12 @@ const phoneToSlug: Record<string, string> = {
   '3017865139': '/sara-sanchez-salazar',
   '3104950697': '/mildred-moreno',
   '3173655829': '/mercy-quezada',
-  '3116285777': '/dr-wilmer-munoz',
+  '3116285777': '/midoctorya',
   'elaiagroup': '/aptos',
   'midoctorya': '/midoctorya',
   'midoctor': '/midoctorya',
-  '3116285777': '/dr-wilmer-munoz',
+  'wilmer': '/dr-wilmer-munoz',
+  'drwilmer': '/dr-wilmer-munoz',
 };
 
 export default function LoginPage() {
