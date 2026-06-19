@@ -1156,7 +1156,446 @@ export const wilmer360ProposalData = {
   ]
 } as const;
 
-export type ProposalData = typeof saraProposalData | typeof mildredProposalData | typeof mildredSocialData | typeof mercyProposalData | typeof wilmerEconomicaProposalData | typeof wilmer360ProposalData;
+export const midoctoryaProposalData = {
+  "ref": "MIDOCTORYA_2026",
+  "titulo": "Propuesta de Sociedad y Desarrollo — MIDOCTORYA",
+  "subtitulo": "Plataforma Marketplace de Salud · Médicos Independientes",
+  "hero_frase": "La salud sin intermediarios. Conectando pacientes con médicos independientes, de forma segura, rápida y transparente.",
+  "cliente": {
+    "nombre": "Dr. Wilmer Muñoz — MIDOCTORYA",
+    "especialidad": "Plataforma Multi-Médico"
+  },
+  "bloques": [
+    {
+      "id": "objetivo",
+      "titulo": "Objetivo del proyecto",
+      "tipo": "texto",
+      "contenido": [
+        "Construir una plataforma marketplace de salud que conecte pacientes con médicos independientes en toda Colombia, permitiendo agendar citas, pagar desde la app y gestionar todo el ciclo de atención.",
+        "Empoderar a médicos independientes para que tengan su propia vitrina digital, agenda y sistema de pagos, sin depender de grandes clínicas.",
+        "Crear un modelo de negocio híbrido: comisión por consulta para MIDOCTORYA + suscripción mensual para médicos, generando ingresos recurrentes y escalables."
+      ]
+    },
+    {
+      "id": "servicio_web",
+      "titulo": "Servicio 1 · Plataforma Web MIDOCTORYA",
+      "tipo": "card",
+      "precio_sin_iva": 8000000,
+      "precio_texto": "COP 8.000.000 (sin IVA) — Incluido en paquete",
+      "bullet_principal": "Plataforma web completa con buscador de médicos, perfiles, agenda, pagos Wompi y paneles de control.",
+      "porque_es_importante": "Porque es el núcleo del negocio. Sin la plataforma web, no hay buscador, no hay agenda, no hay pagos, no hay MIDOCTORYA. Es la base sobre la que se construye todo lo demás.",
+      "caracteristicas": [
+        {
+          "titulo": "Desarrollo",
+          "items": [
+            "Landing page MIDOCTORYA con propuesta de valor clara.",
+            "Buscador de médicos por especialidad, ubicación y precio.",
+            "Perfil de médico con experiencia, servicios, fotos y disponibilidad.",
+            "Agendamiento de citas en línea con pago integrado Wompi.",
+            "Panel del médico: ver agenda, ingresos, perfil público.",
+            "Panel del paciente: mis citas, historial, cancelaciones.",
+            "Panel administrador MIDOCTORYA: gestionar médicos, transacciones, reportes."
+          ]
+        },
+        {
+          "titulo": "Incluye",
+          "items": [
+            "Autenticación multi-rol (paciente, médico, admin).",
+            "Integración con Wompi para pagos.",
+            "Notificaciones por WhatsApp vía n8n.",
+            "Base de datos PostgreSQL en Supabase con RLS.",
+            "Almacenamiento seguro de fotos y documentos.",
+            "Hosting en Vercel (producción).",
+            "Backups automáticos y cifrado de datos."
+          ]
+        },
+        {
+          "titulo": "Valores agregados",
+          "items": [
+            "Arquitectura escalable desde el día 1.",
+            "Cifrado de datos sensibles (cumplimiento Ley 1581).",
+            "Preparado para integración futura con SIIGO.",
+            "Código modular reusable para futuras features."
+          ]
+        },
+        {
+          "titulo": "No incluye",
+          "items": [
+            "App móvil nativa (cotizada por separado en Hito 2).",
+            "Módulo contable completo (integración SIIGO).",
+            "Campañas de marketing digital o pauta.",
+            "Contratos legales, términos y condiciones (abogado del Dr.).",
+            "Costos operativos mensuales (Supabase, Vercel, Apple Dev)."
+          ]
+        }
+      ],
+      "nota_legal": "El desarrollo se realiza bajo acuerdo de sociedad. La plataforma y el código fuente son propiedad de MIDOCTORYA SAS — un activo de la empresa, no de los socios a título personal."
+    },
+    {
+      "id": "servicio_auto",
+      "titulo": "Servicio 2 · App Móvil MIDOCTORYA (iOS + Android)",
+      "tipo": "card",
+      "precio_sin_iva": 5000000,
+      "precio_texto": "COP 5.000.000 (sin IVA) — Incluido en paquete",
+      "bullet_principal": "App móvil multiplataforma con Expo (React Native) para pacientes y médicos.",
+      "porque_es_importante": "Porque el 80% de los pacientes buscan y agendan desde el celular. Una app nativa en iOS y Android da la confianza y experiencia que una web móvil no puede igualar.",
+      "feature_cards": [
+        {
+          "title": "Buscador con Geolocalización",
+          "description": "Pacientes encuentran médicos cerca de su ubicación con filtros por especialidad, precio y disponibilidad.",
+          "icon": "Target"
+        },
+        {
+          "title": "Agendamiento y Pagos",
+          "description": "Seleccionar médico, ver agenda disponible, pagar con Wompi desde la app en 3 taps.",
+          "icon": "Clock"
+        },
+        {
+          "title": "Notificaciones Push",
+          "description": "Recordatorios de citas, cambios de estado, promociones de médicos seguidos.",
+          "icon": "Bot"
+        },
+        {
+          "title": "Panel Médico Móvil",
+          "description": "Médicos gestionan su agenda, confirman citas y ven sus ingresos desde el celular.",
+          "icon": "LayoutTemplate"
+        }
+      ],
+      "caracteristicas": [
+        {
+          "titulo": "Incluye técnicamente",
+          "items": [
+            "App iOS y Android con mismo código base (Expo/React Native).",
+            "Autenticación biométrica y por OTP.",
+            "Geolocalización de médicos con Mapbox/Google Maps.",
+            "Notificaciones push integradas (Expo Push + Supabase Realtime).",
+            "Sincronización en tiempo real con la web.",
+            "Publicación en App Store y Google Play.",
+            "Soporte post-lanzamiento 30 días."
+          ]
+        },
+        {
+          "titulo": "No incluye",
+          "items": [
+            "Cuenta de Apple Developer ($99/año) — la paga el socio técnico.",
+            "Cuenta de Google Play ($25 única) — la paga el socio técnico.",
+            "Diseño UI/UX avanzado con animaciones complejas.",
+            "Modo offline completo."
+          ]
+        }
+      ],
+      "nota_legal": "La publicación en stores requiere cuentas de desarrollador a nombre de MIDOCTORYA."
+    },
+    {
+      "id": "vision_360",
+      "titulo": "Visión 360° — MIDOCTORYA",
+      "tipo": "lista_iconos",
+      "items": [
+        {
+          "title": "Consultas Express (Uber-style)",
+          "description": "Paciente busca médico disponible AHORA cerca a su ubicación. Paga y agenda en 5 minutos. Sin registro complejo.",
+          "icon": "Target",
+          "iconBg": "bg-blue-100",
+          "iconColor": "text-blue-600"
+        },
+        {
+          "title": "MIDOCTORYA PRO (Membresía Pacientes)",
+          "description": "$15K/mes: descuentos, prioridad, recordatorios automáticos e historial clínico guardado en la nube.",
+          "icon": "Star",
+          "iconBg": "bg-yellow-100",
+          "iconColor": "text-yellow-600"
+        },
+        {
+          "title": "Consultorios por Horas (Airbnb Médico)",
+          "description": "Médicos alquilan su consultorio en horas libres a otros médicos de la plataforma. Todo gestionado desde la app.",
+          "icon": "Clock",
+          "iconBg": "bg-green-100",
+          "iconColor": "text-green-600"
+        },
+        {
+          "title": "MIDOCTORYA LABS",
+          "description": "Convenios con laboratorios: pacientes piden exámenes desde la app y resultados llegan digitalmente al médico tratante.",
+          "icon": "Award",
+          "iconBg": "bg-purple-100",
+          "iconColor": "text-purple-600"
+        },
+        {
+          "title": "Geolocalización Inteligente",
+          "description": "Médico marca 'disponible ahora'. Paciente ve mapa con médicos disponibles en tiempo real cerca a su ubicación.",
+          "icon": "Bot",
+          "iconBg": "bg-indigo-100",
+          "iconColor": "text-indigo-600"
+        },
+        {
+          "title": "Programa de Referidos",
+          "description": "Paciente recomienda a otro → recibe descuento. Médico refiere a otro médico → recibe comisión por 6 meses.",
+          "icon": "MessageCircle",
+          "iconBg": "bg-pink-100",
+          "iconColor": "text-pink-600"
+        }
+      ]
+    },
+    {
+      "id": "arquitectura",
+      "titulo": "Arquitectura Técnica",
+      "tipo": "texto",
+      "contenido": [
+        "Frontend Web: Next.js 16 + TypeScript + Tailwind (Vercel).",
+        "App Móvil: Expo / React Native (iOS + Android).",
+        "Backend/BD: Supabase (PostgreSQL + Auth + RLS + Storage + Realtime).",
+        "Pagos: Wompi (sin estrés PCI — Wompi maneja tarjetas, no nosotros).",
+        "Automatización: n8n + WhatsApp Business API (en servidor Lenovo local).",
+        "Facturación Electrónica: Integración API SIIGO (Fase 2, la paga el médico/clínica).",
+        "Servidor Local (Dev/Staging): Lenovo Xeon 32GB RAM + TrueNAS para backups.",
+        "Servidor Producción: Supabase Cloud + Vercel (alta disponibilidad, backups automáticos).",
+        "Seguridad: Cifrado AES-256 en reposo, SSL/TLS, Row Level Security, Zero-Knowledge Encryption para datos sensibles."
+      ]
+    },
+    {
+      "id": "flujo_sistema",
+      "titulo": "Flujo del Sistema — MIDOCTORYA",
+      "tipo": "texto",
+      "contenido": [
+        "── FLUJO DEL PACIENTE ──",
+        "1. PACIENTE abre la app/web → ve buscador de médicos.",
+        "2. PACIENTE filtra por especialidad, ubicación, precio, disponibilidad.",
+        "3. PACIENTE ve perfil del médico: experiencia, reseñas, fotos, precios.",
+        "4. PACIENTE selecciona horario disponible en la agenda del médico.",
+        "5. PACIENTE paga la consulta con Wompi (tarjeta, Nequi, PSE).",
+        "6. SISTEMA confirma la cita con QR de código único y envía notificación.",
+        "7. SISTEMA envía recordatorio 24h y 2h antes al paciente.",
+        "8. PACIENTE asiste a consulta presencial o teleconsulta.",
+        "9. SISTEMA envía encuesta de satisfacción post-consulta.",
+        "10. PACIENTE puede calificar al médico y dejar reseña.",
+        "",
+        "── FLUJO DEL MÉDICO ──",
+        "1. MÉDICO se registra → sube documentos, experiencia, precios.",
+        "2. ADMIN MIDOCTORYA verifica y aprueba el perfil del médico.",
+        "3. MÉDICO define su agenda (horarios disponibles, días, ubicación).",
+        "4. MÉDICO recibe notificación de nueva cita agendada y pagada.",
+        "5. MÉDICO confirma la cita desde su panel móvil o web.",
+        "6. MÉDICO atiende al paciente en la fecha acordada.",
+        "7. MÉDICO ve ingreso registrado automáticamente en su dashboard.",
+        "8. MIDOCTORYA retiene comisión y libera el pago al médico (semanal/quincenal).",
+        "",
+        "── FLUJO DEL PAGO ──",
+        "1. PACIENTE paga $80.000 por consulta vía Wompi.",
+        "2. WOMPI retiene el dinero en una cuenta de garantía.",
+        "3. MIDOCTORYA confirma que la consulta se realizó.",
+        "4. MIDOCTORYA retiene su comisión (50% de ejemplo = $40.000).",
+        "5. Los $40.000 restantes se transfieren al médico.",
+        "6. Todo el proceso queda registrado en el módulo de contabilidad.",
+        "",
+        "── ARQUITECTURA DE DATOS ──",
+        "• Médicos: Perfil, especialidades, horarios, ubicación, documentos, precios.",
+        "• Pacientes: Perfil, historial de citas, pagos, reseñas.",
+        "• Citas: Médico, paciente, fecha, estado, pago, tipo (presencial/tele).",
+        "• Pagos: Transacción Wompi, monto, comisión, estado, fecha de liberación.",
+        "• Suscripciones: Plan del médico, fecha de pago, estado, historial.",
+        "• Reseñas: Calificación, comentario, fecha, anónimo/no anónimo.",
+        "• Auditoría: Registro de accesos a datos sensibles (logs inmutables)."
+      ]
+    },
+    {
+      "id": "modelo_negocio",
+      "titulo": "Modelo de Negocio — MIDOCTORYA",
+      "tipo": "texto",
+      "contenido": [
+        "── INGRESOS ──",
+        "1. Comisión por consulta: 30-50% del valor de la consulta.",
+        "2. Suscripción mensual médicos: $50-100K COP/mes por estar en la plataforma.",
+        "3. Membresía pacientes MIDOCTORYA PRO: $15K/mes (descuentos, prioridad).",
+        "4. Comisión por alquiler de consultorios: 10-15% por transacción.",
+        "5. Convenios laboratorios: comisión por examen gestionado desde la app.",
+        "6. Publicidad dentro de la app (Fase 3): laboratorios, clínicas, marcas.",
+        "",
+        "── COSTOS OPERATIVOS (MENSUALES) ──",
+        "• Supabase Pro: $25 USD (~$100K COP)",
+        "• Vercel: $20 USD (~$80K COP)",
+        "• Apple Developer ($99/año): ~$8 USD/mes (~$35K COP)",
+        "• Dominio midoctorya.com.co: ~$2 USD/mes (~$8K COP)",
+        "• n8n + WhatsApp: ~$20 USD/mes (~$80K COP)",
+        "• TOTAL INFRAESTRUCTURA: ~$75 USD/mes (~$300K COP)",
+        "",
+        "── PROYECCIÓN A 12 MESES ──",
+        "• Escenario Bajo (5 médicos): $250K/mes para el socio técnico.",
+        "• Escenario Moderado (20 médicos): $10M/mes para el socio técnico.",
+        "• Escenario Alto (50 médicos): $38M/mes para el socio técnico.",
+        "",
+        "── LO QUE PAGA MIDOCTORYA (Dr. Wilmer) ──",
+        "• Desarrollo inicial: $18.000.000 COP (3 hitos).",
+        "• Costos operativos mensuales (cloud, dominios, herramientas).",
+        "• Equipo de ventas, abogado, contador, marketing.",
+        "",
+        "── LO QUE PONE EL SOCIO TÉCNICO (Tú) ──",
+        "• Desarrollo completo (web + app + backend).",
+        "• Mantenimiento y mejoras hasta que dure la sociedad (como socio).",
+        "• Servidor Lenovo para staging/desarrollo.",
+        "• Conocimiento técnico y soporte 24/7."
+      ]
+    },
+    {
+      "id": "paquete",
+      "titulo": "Inversión Propuesta — Desarrollo MIDOCTORYA",
+      "tipo": "resumen_costos",
+      "items": [
+        {
+          "nombre": "Plataforma Web MIDOCTORYA (Next.js + Supabase + Wompi)",
+          "valor_sin_iva": 8000000,
+          "valor_texto": "COP 8.000.000 (sin IVA)"
+        },
+        {
+          "nombre": "App Móvil iOS + Android (Expo/React Native)",
+          "valor_sin_iva": 5000000,
+          "valor_texto": "COP 5.000.000 (sin IVA)"
+        },
+        {
+          "nombre": "Infraestructura Cloud, Configuración y Despliegue",
+          "valor_sin_iva": 3700000,
+          "valor_texto": "COP 3.700.000 (sin IVA)"
+        }
+      ],
+      "subtotal_sin_iva": 18000000,
+      "subtotal_texto": "Inversión Total Desarrollo: COP 18.000.000 (sin IVA)",
+      "iva_porcentaje": 0,
+      "iva_valor": 0,
+      "iva_texto": "",
+      "total_con_iva": 18000000,
+      "total_texto": "Inversión Total: COP 18.000.000",
+      "nota": "Pago en 3 hitos: Hito 1 ($8M al firmar), Hito 2 ($6M al entregar plataforma web), Hito 3 ($4M al publicar app móvil)."
+    },
+    {
+      "id": "hitos",
+      "titulo": "Plan de Pagos — 3 Hitos",
+      "tipo": "texto",
+      "contenido": [
+        "HITO 1 — Al firmar contrato ($8.000.000 / 48%)",
+        "● Entrega: Arquitectura, BD diseñada en Supabase, cuentas creadas, cronograma detallado.",
+        "● Tiempo: Semana 0-1.",
+        "",
+        "HITO 2 — MVP Web funcionando ($5.000.000 / 30%)",
+        "● Entrega: Landing + buscador médicos + perfiles + agenda + pagos Wompi + paneles de control.",
+        "● Tiempo: Semana 4-5.",
+        "",
+        "HITO 3 — App Móvil + Lanzamiento ($3.700.000 / 22%)",
+        "● Entrega: App iOS + Android publicada en stores, todo en producción, médicos cargados.",
+        "● Tiempo: Semana 8-10."
+      ]
+    },
+    {
+      "id": "ventajas",
+      "titulo": "Beneficios del modelo MIDOCTORYA",
+      "tipo": "lista_iconos",
+      "items": [
+        {
+          "title": "Para el Dr. Wilmer",
+          "description": "Plataforma sin pagar $30-40M a un desarrollador externo. Socio técnico comprometido con el éxito del proyecto.",
+          "icon": "Award",
+          "iconBg": "bg-blue-100",
+          "iconColor": "text-blue-600"
+        },
+        {
+          "title": "Para los Médicos",
+          "description": "Vitrina digital propia, agenda gestionada, pagos automatizados, sin inversión inicial. Llegan pacientes sin hacer marketing.",
+          "icon": "Star",
+          "iconBg": "bg-yellow-100",
+          "iconColor": "text-yellow-600"
+        },
+        {
+          "title": "Para los Pacientes",
+          "description": "Encontrar especialistas cerca, ver precios, agendar y pagar desde el celular. Sin llamadas, sin filas.",
+          "icon": "Target",
+          "iconBg": "bg-green-100",
+          "iconColor": "text-green-600"
+        },
+        {
+          "title": "Seguridad de Datos",
+          "description": "Infraestructura en la nube con cifrado, backups automáticos y cumplimiento de ley de datos colombiana.",
+          "icon": "Shield",
+          "iconBg": "bg-indigo-100",
+          "iconColor": "text-indigo-600"
+        },
+        {
+          "title": "Escalabilidad",
+          "description": "Arquitectura preparada para pasar de 5 a 500 médicos sin cambiar el código. Solo crece la factura de la nube.",
+          "icon": "Rocket",
+          "iconBg": "bg-purple-100",
+          "iconColor": "text-purple-600"
+        },
+        {
+          "title": "Confidencialidad y Seguridad",
+          "description": "El código fuente y la propiedad intelectual estarán protegidos bajo acuerdo de confidencialidad mutua. Ambos socios tienen acceso y derecho sobre el desarrollo según lo que definamos en el acuerdo de sociedad.",
+          "icon": "Shield",
+          "iconBg": "bg-blue-100",
+          "iconColor": "text-blue-600"
+        },
+        {
+          "title": "Modelo Híbrido",
+          "description": "Comisión por consulta + suscripción médicos. Ingresos recurrentes que protegen a MIDOCTORYA de meses bajos.",
+          "icon": "BarChart",
+          "iconBg": "bg-pink-100",
+          "iconColor": "text-pink-600"
+        },
+        {
+          "title": "Potencial de Expansión",
+          "description": "Arquitectura preparada para expansión a otros países de LATAM. Wompi se reemplaza por Mercado Pago o Stripe.",
+          "icon": "Sparkles",
+          "iconBg": "bg-slate-100",
+          "iconColor": "text-slate-600"
+        }
+      ]
+    },
+    {
+      "id": "declaracion_sociedad",
+      "titulo": "Propuesta de Sociedad",
+      "tipo": "texto",
+      "contenido": [
+        "── MODELO DE SOCIEDAD ──",
+        "● Desarrollador (tú) recibe: $18.000.000 COP por el desarrollo completo + 25% de acciones de MIDOCTORYA SAS.",
+        "● Dr. Wilmer mantiene: 75% de acciones de MIDOCTORYA SAS (socio mayoritario).",
+        "● El Dr. Wilmer pone: Equipo de ventas, abogado, contador, marketing, costos operativos mensuales.",
+        "● El desarrollador pone: Desarrollo completo web + app + backend, mantenimiento hasta que dure la sociedad como socio y dirección técnica (CTO).",
+        "",
+        "── CONDICIONES ──",
+        "● Vesting: Las acciones del desarrollador se liberan en 4 años con 1 año de cliff.",
+        "● Los costos operativos mensuales (Supabase, Vercel, dominio) los paga MIDOCTORYA desde el día 1. Las cuentas de desarrollador corren por cuenta del socio técnico.",
+        "● Las decisiones técnicas las toma el desarrollador (CTO). Las decisiones financieras importantes requieren aprobación de ambos socios.",
+        "● Si MIDOCTORYA no genera ingresos sostenibles después de 18 meses, el código fuente se reparte entre los socios según su porcentaje.",
+        "● El desarrollador puede reutilizar el código base para otros proyectos si la empresa se disuelve.",
+        "",
+        "── LO QUE DEBE PONER EL ABOGADO (NO EL DESARROLLADOR) ──",
+        "● Constitución de MIDOCTORYA SAS.",
+        "● Contrato de accionistas (acciones, vesting, salida).",
+        "● Términos y condiciones para pacientes y médicos.",
+        "● Política de tratamiento de datos personales (Ley 1581).",
+        "● Contratos de prestación de servicios con médicos.",
+        "● Registro de bases de datos ante la SIC.",
+        "● Seguro de responsabilidad civil.",
+        "",
+        "── PRÓXIMOS PASOS ──",
+        "1. Reunión para firmar acuerdo de intención.",
+        "2. Dr. Wilmer contacta abogado para redactar contratos.",
+        "3. Una vez firmado el acuerdo de socios, se inicia el desarrollo.",
+        "4. Tiempo estimado de desarrollo completo: 8-10 semanas."
+      ]
+    },
+    {
+      "id": "nota_final",
+      "titulo": "Condiciones de la Propuesta",
+      "tipo": "texto",
+      "contenido": [
+        "Acuerdo sujeto a la constitución legal de MIDOCTORYA SAS.",
+        "La constitución legal de MIDOCTORYA SAS es requisito previo para iniciar el desarrollo.",
+        "El Dr. Wilmer debe proveer: dominio midoctorya.com.co y acceso a Wompi. Las cuentas de desarrollador para las tiendas de apps corren por cuenta del socio técnico.",
+        "El desarrollador no se hace responsable por temas legales, regulatorios o de facturación electrónica.",
+        "Cada socio responde por sus obligaciones según el acuerdo de accionistas.",
+        "Juntos construimos algo grande. 🚀"
+      ]
+    }
+  ]
+} as const;
+
+export type ProposalData = typeof saraProposalData | typeof mildredProposalData | typeof mildredSocialData | typeof mercyProposalData | typeof wilmerEconomicaProposalData | typeof wilmer360ProposalData | typeof midoctoryaProposalData;
 export type Bloque = (typeof saraProposalData)['bloques'][number];
 export type CardBlock = Extract<Bloque, { tipo: 'card' }>;
 export type CostSummaryBlock = Extract<Bloque, { tipo: 'resumen_costos' }>;
