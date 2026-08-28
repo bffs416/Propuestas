@@ -461,16 +461,19 @@ export default function FabrilabPage() {
                   <div className="space-y-4">
                     <div className="bg-sky-50/50 p-4 rounded-xl border border-sky-100">
                       <h4 className="text-sm font-bold text-sky-800 mb-3 flex items-center gap-2">
-                        <Video className="w-4 h-4" /> BLOQUE 1: ENTREVISTA A FABRILAB (ANTONIO)
+                        <Video className="w-4 h-4" /> BLOQUE 1: ENTREVISTA A FABRILAB (WILMER)
                       </h4>
                       <ul className="list-decimal list-inside text-slate-600 text-sm md:text-base space-y-2 font-medium">
-                        <li>¿Cómo pasaste de algo artístico a algo pasional?</li>
-                        <li>¿Cuál fue el reto del dinero?</li>
-                        <li>¿Cuántos brazos han hecho hasta ahora?</li>
-                        <li>¿Cuántos sponsors han tenido?</li>
-                        <li>¿Cuál ha sido tu momento más emocional?</li>
-                        <li>¿Cómo funciona hoy con la inteligencia artificial y los avances tecnológicos?</li>
-                        <li>¿Qué son los brazos electrónicos y cómo funcionan?</li>
+                        <li>¿Wilmer, cómo nació la idea de FabriLab y qué te motivó a dedicar tu vida a crear brazos mecánicos para niños?</li>
+                        <li>Al principio, ¿cuál fue el mayor obstáculo que enfrentaron para hacer realidad los primeros brazos?</li>
+                        <li>¿Cómo ha sido el apoyo de los sponsors y qué tan crucial es la ayuda de las empresas para que FabriLab exista?</li>
+                        <li>¿Tienen un estimado de a cuántos niños y familias han logrado cambiarles la vida con una prótesis?</li>
+                        <li>De todas las entregas, ¿hay algún momento o la reacción de algún niño que te haya marcado para siempre?</li>
+                        <li>Sabemos que muchos brazos tienen temáticas de superhéroes. ¿Por qué este enfoque visual y cómo cambia esto la forma en que los niños asumen su prótesis?</li>
+                        <li>¿Podrías explicarnos de manera sencilla cómo funciona exactamente uno de estos brazos mecánicos o electrónicos cuando el niño se lo pone?</li>
+                        <li>¿Cómo están integrando la impresión 3D, los nuevos materiales o incluso la inteligencia artificial en los diseños actuales?</li>
+                        <li>Cuando miras hacia el futuro, ¿dónde ves a FabriLab en 5 o 10 años y cuál es tu mayor sueño para la fundación?</li>
+                        <li>Si alguien está viendo esto y quiere aportar, ¿cuál es la mejor manera en la que pueden sumar su "granito de arena"?</li>
                       </ul>
                     </div>
                     <div className="bg-amber-50/50 p-4 rounded-xl border border-amber-100">
