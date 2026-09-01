@@ -18,6 +18,7 @@ const phoneToSlug: Record<string, string> = {
   'wilmer': '/dr-wilmer-munoz',
   'drwilmer': '/dr-wilmer-munoz',
   'fabrilab': '/fabrilab',
+  'glucoscacao': '/glucoscacao',
 };
 
 export default function LoginPage() {
