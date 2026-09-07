@@ -1595,7 +1595,453 @@ export const midoctoryaProposalData = {
   ]
 } as const;
 
-export type ProposalData = typeof saraProposalData | typeof mildredProposalData | typeof mildredSocialData | typeof mercyProposalData | typeof wilmerEconomicaProposalData | typeof wilmer360ProposalData | typeof midoctoryaProposalData;
+export const nyvaraProposalData = {
+  "ref": "PLAZA80_2026",
+  "titulo": "Propuesta Digital & Visibilidad Estratégica · C.C. Plaza 80",
+  "subtitulo": "Plataforma Web + Recorrido Virtual 360° (Obsequio) + Producción Video 4K",
+  "hero_frase": "Estrategia digital diseñada para captar la atención de los visitantes del sector de Titán Plaza, Santa María del Lago y Las Ferias.",
+  "cliente": {
+    "nombre": "Centro Comercial Plaza 80",
+    "especialidad": "Centro Comercial, Comercio Local & Servicios"
+  },
+  "bloques": [
+    {
+      "id": "objetivo",
+      "titulo": "Objetivo del proyecto",
+      "tipo": "texto",
+      "contenido": [
+        "Posicionar la oferta comercial, tiendas y servicios del Centro Comercial Plaza 80 frente al constante flujo peatonal y vehicular de las zonas aledañas (Titán Plaza, Santa María del Lago, Las Ferias).",
+        "Desarrollar una página web moderna e interactiva que publique noticias del centro comercial, beneficios de parqueadero, directorio de asociados y promociones exclusivas para la comunidad del sector.",
+        "Desplegar el Recorrido Virtual 360° de las áreas comunes del centro comercial (obsequiado al contratar el paquete), integrando planos 3D e información relevante de valor."
+      ]
+    },
+    {
+      "id": "servicio_web",
+      "titulo": "Servicio 1 · Página Web Plaza 80 + Recorrido 360° (Obsequio)",
+      "tipo": "card",
+      "precio_sin_iva": 850000,
+      "precio_texto": "COP 850.000 (sin IVA)",
+      "bullet_principal": "Landing page principal con sección de Asociados/Locales, noticias, beneficios de parqueadero y Recorrido Virtual 360° de obsequio.",
+      "porque_es_importante": "Porque visibiliza al Centro Comercial Plaza 80 como una opción comercial cercana, cómoda y con amplios beneficios frente a las grandes aglomeraciones del sector Titán.",
+      "caracteristicas": [
+        {
+          "titulo": "Funcionalidades Incluidas",
+          "items": [
+            "Landing Page principal optimizada para velocidad y dispositivos móviles.",
+            "Sección de Noticias y Beneficios de Parqueadero.",
+            "Directorio de Asociados y Locales comerciales del centro comercial.",
+            "Recorrido Virtual 360° GRATIS de las áreas comunes del centro comercial.",
+            "Integración de Plano 3D Interactivo (si el cliente provee el plano).",
+            "Formulario de contacto y botón directo a WhatsApp."
+          ]
+        },
+        {
+          "titulo": "Valores agregados / Servicios Opcionales",
+          "items": [
+            "10 Fotografías Profesionales para la página web por COP 150.000 + IVA (en caso de no contar con fotografías propias para el C.C. Plaza 80)."
+          ]
+        }
+      ],
+      "nota_legal": "El recorrido 360° obsequiado cubre las áreas generales del centro comercial. Inclusión interactiva por local independiente: $80.000 + IVA por local. Servicio fotográfico adicional: $150.000 + IVA por 10 fotografías."
+    },
+    {
+      "id": "servicio_video",
+      "titulo": "Servicio 2 · Producción Audiovisual 4K con Dron",
+      "tipo": "card",
+      "precio_sin_iva": 250000,
+      "precio_texto": "COP 250.000 (sin IVA) por video",
+      "bullet_principal": "Video corporativo/comercial llamativo en 4K con tomas aéreas de dron y cámara 360°.",
+      "porque_es_importante": "Porque un video de alta calidad cinematográfica destaca la fachada, ubicación y facilidades del centro comercial de forma impactante en redes sociales y la web.",
+      "feature_cards": [
+        {
+          "title": "Cinematografía 4K",
+          "description": "Rodaje en alta definición para mostrar las instalaciones y el flujo de clientes.",
+          "icon": "Video"
+        },
+        {
+          "title": "Tomas de Dron 4K",
+          "description": "Perspectiva aérea de la ubicación sobre la Calle 80 y cercanías a Titán Plaza.",
+          "icon": "Sparkles"
+        },
+        {
+          "title": "Cámara 360°",
+          "description": "Tomas envolventes para integrar en la web y canales de comunicación.",
+          "icon": "Film"
+        }
+      ],
+      "caracteristicas": [
+        {
+          "titulo": "Entregables",
+          "items": [
+            "Video Corporativo / Comercial HD/4K de alta calidad.",
+            "Tomas de Dron y cámara 360°.",
+            "Música licenciada y edición profesional."
+          ]
+        }
+      ],
+      "nota_legal": "Valor aplica por video tanto para el Centro Comercial como para locales independientes."
+    },
+    {
+      "id": "paquete",
+      "titulo": "Resumen de Inversión Propuesta",
+      "tipo": "resumen_costos",
+      "items": [
+        {
+          "nombre": "Página Web Plaza 80 + Recorrido 360° Obsequio + Plano 3D",
+          "valor_sin_iva": 850000,
+          "valor_texto": "COP 850.000 (sin IVA)"
+        },
+        {
+          "nombre": "Producción Video Corporativo / Comercial 4K con Dron",
+          "valor_sin_iva": 250000,
+          "valor_texto": "COP 250.000 (sin IVA)"
+        }
+      ],
+      "subtotal_sin_iva": 1100000,
+      "subtotal_texto": "Subtotal: COP 1.100.000 (sin IVA)",
+      "iva_porcentaje": 19,
+      "iva_valor": 209000,
+      "iva_texto": "IVA (19%): COP 209.000",
+      "total_con_iva": 1309000,
+      "total_texto": "Inversión Total: COP 1.309.000 (IVA incluido)",
+      "nota": "Recorrido 360° obsequiado cubre áreas generales. Montaje técnico de contenido interactivo por local independiente: COP 80.000 + IVA (NO incluye producción de video, fotos o documentos; el local debe suministrar el material listo)."
+    },
+    {
+      "id": "ventajas",
+      "titulo": "Beneficios clave para C.C. Plaza 80",
+      "tipo": "lista_iconos",
+      "items": [
+        {
+          "title": "Atracción de Clientes Locales",
+          "description": "Visibilidad dirigida a residentes de Las Ferias, Santa María del Lago y Titán.",
+          "icon": "Target",
+          "iconBg": "bg-blue-100",
+          "iconColor": "text-blue-600"
+        },
+        {
+          "title": "Difusión de Beneficios",
+          "description": "Publicación clara de ventajas de parqueadero y promociones exclusivas del sector.",
+          "icon": "Award",
+          "iconBg": "bg-purple-100",
+          "iconColor": "text-purple-600"
+        },
+        {
+          "title": "Directorio de Asociados",
+          "description": "Espacio dedicado para dar a conocer las tiendas que usualmente la gente no ve.",
+          "icon": "Clock",
+          "iconBg": "bg-green-100",
+          "iconColor": "text-green-600"
+        }
+      ]
+    },
+    {
+      "id": "nota_final",
+      "titulo": "Condiciones Generales",
+      "tipo": "texto",
+      "contenido": [
+        "Propuesta dirigida al Centro Comercial Plaza 80.",
+        "Incluye emisión de factura electrónica de venta.",
+        "Montaje técnico de información por local comercial en el 360°: $80.000 + IVA por local (El local debe proveer el material; NO incluye producción de fotos, videos ni diseño)."
+      ]
+    }
+  ]
+} as const;
+
+export const nyvara360ProposalData = {
+  "ref": "NYVARA_360_2026",
+  "titulo": "Propuesta Especializada: Recorridos Virtuales 360°",
+  "subtitulo": "Espacios Inmersivos VR · Escaneo HDR 3D · Google Street View",
+  "hero_frase": "Una experiencia inmersiva interactiva en 360° diseñada para transportar a tus clientes a tus instalaciones desde cualquier lugar del mundo.",
+  "cliente": {
+    "nombre": "Nyvara",
+    "especialidad": "Recorridos Virtuales 360° & Espacios VR"
+  },
+  "bloques": [
+    {
+      "id": "objetivo",
+      "titulo": "Objetivo del proyecto 360°",
+      "tipo": "texto",
+      "contenido": [
+        "Capturar y digitalizar tus espacios físicos en alta resolución 360° HDR con tecnología estilo Matterport / VR.",
+        "Integrar puntos de interés interactivos (hotspots) para mostrar fichas técnicas, imágenes y enlaces directos a reservas.",
+        "Facilitar la exploración remota 24/7 en dispositivos móviles, ordenadores y gafas de realidad virtual (Meta Quest)."
+      ]
+    },
+    {
+      "id": "servicio_360",
+      "titulo": "Servicio · Recorridos Virtuales 360° & Espacios VR",
+      "tipo": "card",
+      "precio_sin_iva": 2200000,
+      "precio_texto": "COP 2.200.000 (sin IVA)",
+      "bullet_principal": "Captura profesional en alta resolución 4K HDR, recorrido interactivo 3D con puntos de interés y compatibilidad VR.",
+      "porque_es_importante": "Porque los recorridos 360° incrementan hasta en un 300% el tiempo de permanencia del cliente y transmiten transparencia y modernidad inmediata.",
+      "caracteristicas": [
+        {
+          "titulo": "Funcionalidades Inmersivas",
+          "items": [
+            "Escaneo 360° HDR de alta fidelidad de color y nitidez.",
+            "Navegación interactiva fluida (Walkthrough 3D estilo Dollhouse).",
+            "Hotspots de información interactivos (videos, fotos, fichas técnicas, enlaces).",
+            "Compatibilidad total con Goggles de Realidad Virtual (Meta Quest / VR) y smartphones.",
+            "Integración y publicación directa en Google Street View & Google Maps."
+          ]
+        },
+        {
+          "titulo": "Entregables Técnicos & Portafolio 360",
+          "items": [
+            "Integración del Portafolio 360° en Vivo: https://nyvaragroup.com/portafolio-360",
+            "Código de incrustación iFrame listo para cualquier sitio web.",
+            "Host y almacenamiento en la nube ultrarrápido por 1 año.",
+            "Fotografías panorámicas extraídas en alta resolución para redes sociales."
+          ]
+        }
+      ],
+      "nota_legal": "El cliente debe garantizar la disponibilidad del espacio adecuadamente iluminado para la jornada de captura 360°."
+    },
+    {
+      "id": "paquete",
+      "titulo": "Inversión Propuesta - Recorridos 360°",
+      "tipo": "resumen_costos",
+      "items": [
+        {
+          "nombre": "Servicio Recorridos Virtuales 360° & Espacios VR",
+          "valor_sin_iva": 2200000,
+          "valor_texto": "COP 2.200.000 (sin IVA)"
+        }
+      ],
+      "subtotal_sin_iva": 2200000,
+      "subtotal_texto": "Subtotal: COP 2.200.000 (sin IVA)",
+      "iva_porcentaje": 19,
+      "iva_valor": 418000,
+      "iva_texto": "IVA (19%): COP 418.000",
+      "total_con_iva": 2618000,
+      "total_texto": "Inversión Total: COP 2.618.000 (IVA incluido)",
+      "nota": "Forma de pago: 50% inicio de escaneo y 50% a la entrega del enlace iFrame y publicación."
+    },
+    {
+      "id": "ventajas",
+      "titulo": "Beneficios clave",
+      "tipo": "lista_iconos",
+      "items": [
+        {
+          "title": "Máximo Tiempo de Permanencia",
+          "description": "Tus visitantes pasarán 3 veces más tiempo interactuando con los tours 360°.",
+          "icon": "Clock",
+          "iconBg": "bg-blue-100",
+          "iconColor": "text-blue-600"
+        },
+        {
+          "title": "Confianza e Inmersión 24/7",
+          "description": "Transmita realismo total desde computadores, teléfonos y visores VR.",
+          "icon": "Eye",
+          "iconBg": "bg-purple-100",
+          "iconColor": "text-purple-600"
+        }
+      ]
+    }
+  ]
+} as const;
+
+export const nyvaraVideoProposalData = {
+  "ref": "NYVARA_VIDEO_2026",
+  "titulo": "Propuesta Especializada: Producción Audiovisual 4K",
+  "subtitulo": "Cinematografía 4K · Tomas Aéreas con Dron · Reels & TikToks",
+  "hero_frase": "Narrativa audiovisual de nivel cinematográfico diseñada para destacar la propuesta de valor y personalidad de tu marca.",
+  "cliente": {
+    "nombre": "Nyvara",
+    "especialidad": "Producción Audiovisual 4K & Dron"
+  },
+  "bloques": [
+    {
+      "id": "objetivo",
+      "titulo": "Objetivo del proyecto Audiovisual",
+      "tipo": "texto",
+      "contenido": [
+        "Producir piezas en video de ultra alta definición (4K HDR) con tomas de dron y narrativa profesional.",
+        "Crear contenidos versátiles tanto en formato horizontal (16:9) para sitio web como en formato vertical (9:16) para Instagram Reels y TikTok.",
+        "Reforzar el posicionamiento de marca con etalonaje de color, sonido profesional y música licenciada."
+      ]
+    },
+    {
+      "id": "servicio_video",
+      "titulo": "Servicio · Producción Audiovisual & Spots 4K",
+      "tipo": "card",
+      "precio_sin_iva": 2800000,
+      "precio_texto": "COP 2.800.000 (sin IVA)",
+      "bullet_principal": "Producción de video corporativo/comercial en 4K con tomas de dron, guionización y edición de formato Reels/TikTok.",
+      "porque_es_importante": "Porque el video es el formato con mayor tasa de enganche y retención en internet. Una producción cinematográfica conecta emocionalmente.",
+      "feature_cards": [
+        {
+          "title": "Cinematografía 4K",
+          "description": "Rodaje en ultra alta definición con iluminación profesional.",
+          "icon": "Video"
+        },
+        {
+          "title": "Tomas de Dron Aéreo",
+          "description": "Tomas aéreas en 4K que muestran perspectiva de gran alcance.",
+          "icon": "Sparkles"
+        },
+        {
+          "title": "Formato Vertical & Reels",
+          "description": "Edición estratégica optimizada para Instagram Reels y TikTok.",
+          "icon": "Film"
+        },
+        {
+          "title": "Post-Producción Pro",
+          "description": "Color grading profesional y música libre de derechos.",
+          "icon": "Award"
+        }
+      ],
+      "caracteristicas": [
+        {
+          "titulo": "Entregables del Paquete Audiovisual",
+          "items": [
+            "1 Video Principal Corporativo / Promocional (1:30 a 2:00 min en 4K).",
+            "3 Reels / Short Videos adaptados a formato vertical (9:16).",
+            "Tomas aéreas con dron profesional certificado.",
+            "Diseño de guion técnico y escaleta de rodaje.",
+            "Música licenciada para uso comercial."
+          ]
+        }
+      ],
+      "nota_legal": "Incluye 2 rondas de revisiones en la etapa de post-producción."
+    },
+    {
+      "id": "paquete",
+      "titulo": "Inversión Propuesta - Producción 4K",
+      "tipo": "resumen_costos",
+      "items": [
+        {
+          "nombre": "Servicio Producción Audiovisual & Spots 4K con Dron",
+          "valor_sin_iva": 2800000,
+          "valor_texto": "COP 2.800.000 (sin IVA)"
+        }
+      ],
+      "subtotal_sin_iva": 2800000,
+      "subtotal_texto": "Subtotal: COP 2.800.000 (sin IVA)",
+      "iva_porcentaje": 19,
+      "iva_valor": 532000,
+      "iva_texto": "IVA (19%): COP 532.000",
+      "total_con_iva": 3332000,
+      "total_texto": "Inversión Total: COP 3.332.000 (IVA incluido)",
+      "nota": "Forma de pago: 50% al iniciar rodaje y 50% contra entrega final de los masters en 4K."
+    },
+    {
+      "id": "ventajas",
+      "titulo": "Beneficios clave",
+      "tipo": "lista_iconos",
+      "items": [
+        {
+          "title": "Autoridad Visual 4K",
+          "description": "Rodajes cinematográficos con Tomas de Dron que posicionan la marca al máximo nivel.",
+          "icon": "Award",
+          "iconBg": "bg-purple-100",
+          "iconColor": "text-purple-600"
+        }
+      ]
+    }
+  ]
+} as const;
+
+export const nyvaraWebProposalData = {
+  "ref": "NYVARA_WEB_2026",
+  "titulo": "Propuesta Especializada: Desarrollo Web Premium",
+  "subtitulo": "Sitio Web Ultramoderno (Next.js) · SEO · Captación WhatsApp 24/7",
+  "hero_frase": "Una plataforma web de alto rendimiento orientada a convertir visitantes en clientes potenciales.",
+  "cliente": {
+    "nombre": "Nyvara",
+    "especialidad": "Desarrollo Web & Plataformas Digitales"
+  },
+  "bloques": [
+    {
+      "id": "objetivo",
+      "titulo": "Objetivo del proyecto Web",
+      "tipo": "texto",
+      "contenido": [
+        "Desarrollar una plataforma digital de carga instantánea con tecnologías de vanguardia (Next.js 14 / React).",
+        "Implementar arquitectura de diseño responsivo adaptada a smartphones, tablets y pantallas de escritorio.",
+        "Integrar botones de agendación automatizada directos a WhatsApp para maximizar conversiones."
+      ]
+    },
+    {
+      "id": "servicio_web",
+      "titulo": "Servicio · Plataforma Web Integradora Pro",
+      "tipo": "card",
+      "precio_sin_iva": 2500000,
+      "precio_texto": "COP 2.500.000 (sin IVA)",
+      "bullet_principal": "Sitio web interactivo de alto rendimiento (Next.js + Tailwind CSS) con dominio y hosting por 1 año.",
+      "porque_es_importante": "Porque tu página web es tu canal comercial activo 24/7 donde tus clientes conocen tu oferta y contactan de inmediato.",
+      "feature_cards": [
+        {
+          "title": "Diseño UI/UX Inmersivo",
+          "description": "Diseño a medida con animaciones fluidas y modo oscuro.",
+          "icon": "LayoutTemplate"
+        },
+        {
+          "title": "Captación Automática",
+          "description": "Botones de WhatsApp y formularios inteligentes.",
+          "icon": "Target"
+        },
+        {
+          "title": "SEO & Hosting Cloud",
+          "description": "Optimización Google, certificado SSL y dominio incluido.",
+          "icon": "Server"
+        }
+      ],
+      "caracteristicas": [
+        {
+          "titulo": "Incluye en la Plataforma Web",
+          "items": [
+            "Arquitectura web frontend avanzada (Next.js 14 / React).",
+            "Página Principal + Secciones de Servicios y Portafolio.",
+            "Formulario de contacto sincronizado a correo.",
+            "Diseño 100% adaptable a teléfonos móviles y computadoras.",
+            "Dominio (.com o .co) y Hosting ultrarrápido por 1 año."
+          ]
+        }
+      ],
+      "nota_legal": "Incluye soporte y acompañamiento técnico post-lanzamiento por 30 días."
+    },
+    {
+      "id": "paquete",
+      "titulo": "Inversión Propuesta - Páginas Web",
+      "tipo": "resumen_costos",
+      "items": [
+        {
+          "nombre": "Servicio Plataforma Web Pro (Hosting/Dominio por 1 año)",
+          "valor_sin_iva": 2500000,
+          "valor_texto": "COP 2.500.000 (sin IVA)"
+        }
+      ],
+      "subtotal_sin_iva": 2500000,
+      "subtotal_texto": "Subtotal: COP 2.500.000 (sin IVA)",
+      "iva_porcentaje": 19,
+      "iva_valor": 475000,
+      "iva_texto": "IVA (19%): COP 475.000",
+      "total_con_iva": 2975000,
+      "total_texto": "Inversión Total: COP 2.975.000 (IVA incluido)",
+      "nota": "Forma de pago: 50% inicio del desarrollo y 50% al lanzamiento del sitio web."
+    },
+    {
+      "id": "ventajas",
+      "titulo": "Beneficios clave",
+      "tipo": "lista_iconos",
+      "items": [
+        {
+          "title": "Captación 24/7",
+          "description": "Motor de contacto directo a WhatsApp desde dispositivos móviles.",
+          "icon": "Target",
+          "iconBg": "bg-red-100",
+          "iconColor": "text-red-600"
+        }
+      ]
+    }
+  ]
+} as const;
+
+export type ProposalData = typeof saraProposalData | typeof mildredProposalData | typeof mildredSocialData | typeof mercyProposalData | typeof wilmerEconomicaProposalData | typeof wilmer360ProposalData | typeof midoctoryaProposalData | typeof nyvaraProposalData | typeof nyvara360ProposalData | typeof nyvaraVideoProposalData | typeof nyvaraWebProposalData;
 export type Bloque = (typeof saraProposalData)['bloques'][number];
 export type CardBlock = Extract<Bloque, { tipo: 'card' }>;
 export type CostSummaryBlock = Extract<Bloque, { tipo: 'resumen_costos' }>;
+
+

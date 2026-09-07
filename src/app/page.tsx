@@ -19,6 +19,21 @@ const phoneToSlug: Record<string, string> = {
   'drwilmer': '/dr-wilmer-munoz',
   'fabrilab': '/fabrilab',
   'glucoscacao': '/glucoscacao',
+  'nyvara': '/nyvara',
+  'multimedia': '/nyvara',
+  '360': '/nyvara',
+  'recorridos': '/nyvara',
+  'nyvara-360': '/nyvara',
+  'video': '/nyvara',
+  '4k': '/nyvara',
+  'nyvara-video': '/nyvara',
+  'web': '/nyvara',
+  'webs': '/nyvara',
+  'nyvara-web': '/nyvara',
+  'plaza80': '/nyvara',
+  'plaza 80': '/nyvara',
+  'plaza-80': '/nyvara',
+  'plaza': '/nyvara',
 };
 
 export default function LoginPage() {

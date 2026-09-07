@@ -120,7 +120,14 @@ export default function Investment({ proposalData }: { proposalData: ProposalDat
               <div className="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center flex-shrink-0 text-white shadow-lg shadow-blue-200">
                 <Info className="w-5 h-5" />
               </div>
-              {proposalData.ref === 'MILDRED_2026' ? (
+              {(proposalData.ref as string) === 'PLAZA80_2026' ? (
+                <div>
+                  <p className="text-sm font-bold text-blue-900 uppercase tracking-wider">Forma de Pago</p>
+                  <p className="text-sm text-blue-700 leading-relaxed mt-1">
+                    Para iniciar la producción se realiza un <strong>50% de anticipo inicial</strong> (<span className="font-mono font-bold text-blue-900 bg-white/50 px-2 py-0.5 rounded">COP {(investmentBlock.total_con_iva * 0.5).toLocaleString('es-CO')}</span>) y el <strong>50% restante</strong> contra entrega final del proyecto.
+                  </p>
+                </div>
+              ) : proposalData.ref === 'MILDRED_2026' ? (
                 <div>
                   <p className="text-sm font-bold text-blue-900 uppercase tracking-wider">Saldo Pendiente</p>
                   <p className="text-sm text-blue-700 leading-relaxed mt-1">
