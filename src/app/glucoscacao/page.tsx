@@ -68,96 +68,102 @@ export default function GlucoscacaoPage() {
     {
       title: 'Escena 5',
       image: '/glucoscacao/idea1/5.jpeg',
-      description: '[FLASHBACK] La escena cambia por completo. Vemos la silueta de unos árboles de cacao gigantes bajo el sol del campo.',
-      action: 'Plano general del campo. Líneas muy sencillas para simular la naturaleza y las mazorcas colgando.'
+      description: 'Empieza a saborear y aparece una ligera sonrisa en su rostro.',
+      action: 'Empieza a parecer una luz amarilla en esu cabeza sonido de alegria y pajaros cantando, y en su pecho aparece una loz roja sonidos de un corazon tranquilo. Las líneas del apartamento se vuelven curvas y suaves dando paso al recuerdo.'
     },
     {
       title: 'Escena 6',
       image: '/glucoscacao/idea1/6.jpeg',
-      description: 'La abuela, con una sonrisa dulce y tradicional, estira sus manos para recolectar una mazorca de cacao.',
-      action: 'Plano medio de la abuela. Trazo tierno, expresivo y muy simplificado.'
+      description: '[FLASHBACK] La escena cambia por completo. Vemos la silueta de unos árboles de cacao gigantes bajo el sol del campo.',
+      action: 'Plano general del campo. Líneas muy sencillas para simular la naturaleza y las mazorcas colgando.'
     },
     {
       title: 'Escena 7',
       image: '/glucoscacao/idea1/7.jpeg',
-      description: 'Las manos arrugadas de la abuela abren la mazorca, dejando ver los granos de cacao puros en su interior.',
-      action: 'Plano detalle de la fruta abierta. Resaltar de forma icónica los granos del producto natural.'
+      description: 'La abuela, con una sonrisa dulce y tradicional, estira sus manos para recolectar una mazorca de cacao.',
+      action: 'Plano medio de la abuela. Trazo tierno, expresivo y muy simplificado.'
     },
     {
       title: 'Escena 8',
       image: '/glucoscacao/idea1/8.jpeg',
-      description: 'La abuela tuesta los granos en un comal antiguo. Líneas curvas simples simulan el aroma flotando en el aire del campo.',
-      action: 'Plano medio. Movimiento sutil en las líneas del humo del tostado ancestral.'
+      description: 'Las manos arrugadas de la abuela abren la mazorca, dejando ver los granos de cacao puros en su interior.',
+      action: 'Plano detalle de la fruta abierta. Resaltar de forma icónica los granos del producto natural.'
     },
     {
       title: 'Escena 9',
       image: '/glucoscacao/idea1/9.jpeg',
-      description: 'La abuela muele el cacao con fuerza y ritmo sobre un metate de piedra tradicional.',
-      action: 'Plano picado. Siluetas claras de la acción tradicional del molido artesanal.'
+      description: 'La abuela tuesta los granos en un comal antiguo. Líneas curvas simples simulan el aroma flotando en el aire del campo.',
+      action: 'Plano medio. Movimiento sutil en las líneas del humo del tostado ancestral.'
     },
     {
       title: 'Escena 10',
       image: '/glucoscacao/idea1/10.jpeg',
-      description: 'La abuela sirve el chocolate en tazas para toda la familia reunida alrededor de una mesa rústica. Todos ríen en un momento de compartir.',
-      action: 'Plano general. Figuras sencillas compartiendo felices en una Navidad del pasado.'
+      description: 'La abuela muele el cacao con fuerza y ritmo sobre un metate de piedra tradicional.',
+      action: 'Plano picado. Siluetas claras de la acción tradicional del molido artesanal.'
     },
     {
       title: 'Escena 11',
       image: '/glucoscacao/idea1/11.jpeg',
-      description: '[FIN DEL FLASHBACK] Una lágrima resbala por la mejilla de la joven. Abre los ojos; está de vuelta en su apartamento y siente una profunda nostalgia.',
-      action: 'Primer plano de su rostro. Una sola línea marca la lágrima para mantener la simplicidad absoluta.'
+      description: 'La abuela sirve el chocolate en tazas para toda la familia reunida alrededor de una mesa rústica. Todos ríen en un momento de compartir.',
+      action: 'Plano general. Figuras sencillas compartiendo felices en una Navidad del pasado.'
     },
     {
       title: 'Escena 12',
       image: '/glucoscacao/idea1/12.jpeg',
-      description: '(La voz en off continúa) Ella mira la bolsa de nibs en su mano y toma una decisión: saca su teléfono celular.',
-      action: 'Plano medio-corto. Vemos el teléfono en primer plano y a ella decidida al fondo.'
+      description: '[FIN DEL FLASHBACK] Una lágrima resbala por la mejilla de la joven. Abre los ojos; está de vuelta en su apartamento y siente una profunda nostalgia.',
+      action: 'Primer plano de su rostro. Una sola línea marca la lágrima para mantener la simplicidad absoluta.'
     },
     {
       title: 'Escena 13',
       image: '/glucoscacao/idea1/13.jpeg',
-      description: 'En la pantalla del celular aparece el letrero de "Llamando a Mamá...".',
-      action: 'Plano detalle de la pantalla del celular con tipografía de trazo limpio.'
+      description: '(La voz en off continúa) Ella mira la bolsa de nibs en su mano y toma una decisión: saca su teléfono celular.',
+      action: 'Plano medio-corto. Vemos el teléfono en primer plano y a ella decidida al fondo.'
     },
     {
       title: 'Escena 14',
       image: '/glucoscacao/idea1/14.jpeg',
-      description: 'La llamada conecta. En la pantalla aparece la cara de la mamá sonriendo desde la cocina de la casa familiar.',
-      action: 'Plano detalle de la pantalla del teléfono mostrando el dibujo feliz de la mamá.'
+      description: 'En la pantalla del celular aparece el letrero de "Llamando a Mamá...".',
+      action: 'Plano detalle de la pantalla del celular con tipografía de trazo limpio.'
     },
     {
       title: 'Escena 15',
       image: '/glucoscacao/idea1/15.jpeg',
-      description: 'La joven se apoya contra el sofá, se ríe a carcajadas mientras habla por la videollamada y sigue comiendo los nibs de chocolate.',
-      action: 'Plano medio. El lenguaje corporal cambia por completo: hombros relajados y sonrisa amplia.'
+      description: 'La llamada conecta. En la pantalla aparece la cara de la mamá sonriendo desde la cocina de la casa familiar.',
+      action: 'Plano detalle de la pantalla del teléfono mostrando el dibujo feliz de la mamá.'
     },
     {
       title: 'Escena 16',
       image: '/glucoscacao/idea1/16.jpeg',
-      description: 'Plano de la mesa donde la bolsa de "Nibs de Chocolate" está abierta, con algunos nibs esparcidos artísticamente al lado del teléfono.',
-      action: 'Plano de producto integrado en la narrativa. Estética limpia y ordenada sobre la mesa.'
+      description: 'La joven se apoya contra el sofá, se ríe a carcajadas mientras habla por la videollamada y sigue comiendo los nibs de chocolate.',
+      action: 'Plano medio. El lenguaje corporal cambia por completo: hombros relajados y sonrisa amplia.'
     },
     {
       title: 'Escena 17',
       image: '/glucoscacao/idea1/17.jpeg',
-      description: 'La bolsa de chocolate aparece en primer plano junto al celular. En la pantalla se lee la frase final: "Nibs de Cacao: El sabor que te une a tus raíces".',
-      action: 'Cierre de marca conceptual. Dibujo plano del empaque y texto con tipografía limpia.'
+      description: 'Plano de la mesa donde la bolsa de "Nibs de Chocolate" está abierta, con algunos nibs esparcidos artísticamente al lado del teléfono.',
+      action: 'Plano de producto integrado en la narrativa. Estética limpia y ordenada sobre la mesa.'
     },
     {
       title: 'Escena 18',
       image: '/glucoscacao/idea1/18.jpeg',
-      description: 'La toma se aleja de la mesa. El apartamento ya no se ve vacío; el entorno se siente cálido y lleno de la energía de la llamada.',
-      action: 'Plano general del espacio. Líneas más curvas y una composición mucho más acogedora.'
+      description: 'La bolsa de chocolate aparece en primer plano junto al celular. En la pantalla se lee la frase final: "Nibs de Cacao: El sabor que te une a tus raíces".',
+      action: 'Cierre de marca conceptual. Dibujo plano del empaque y texto con tipografía limpia.'
     },
     {
       title: 'Escena 19',
       image: '/glucoscacao/idea1/19.jpeg',
-      description: 'La joven mira a la ventana, come un último pedazo de chocolate y suspira con una paz absoluta. Ya no se siente sola.',
-      action: 'Primer plano de tres cuartos. Rostro que transmite total serenidad y felicidad.'
+      description: 'La toma se aleja de la mesa. El apartamento ya no se ve vacío; el entorno se siente cálido y lleno de la energía de la llamada.',
+      action: 'Plano general del espacio. Líneas más curvas y una composición mucho más acogedora.'
     },
     {
       title: 'Escena 20',
       image: '/glucoscacao/idea1/20.jpeg',
+      description: 'La joven mira a la ventana, come un último pedazo de chocolate y suspira con una paz absoluta. Ya no se siente sola.',
+      action: 'Primer plano de tres cuartos. Rostro que transmite total serenidad y felicidad.'
+    },
+    {
+      title: 'Escena 21',
+      image: '/glucoscacao/idea1/21.jpeg',
       description: 'Ella abraza con ambas manos la bolsa de chocolates contra su pecho, cerrando los ojos con una sonrisa gigante mientras escucha la risa de su mamá al teléfono. Se siente protegida y en casa. El boceto se desvanece a blanco.',
       action: 'Plano medio de la joven. Lenguaje corporal de protección y calidez absoluta para cerrar el video de forma muy emotiva.'
     }
