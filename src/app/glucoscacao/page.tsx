@@ -451,7 +451,7 @@ export default function GlucoscacaoPage() {
                   <div className="grid lg:grid-cols-2 gap-8 mb-8">
                     <div className="aspect-video rounded-2xl overflow-hidden shadow-lg border border-slate-100 bg-slate-900 relative group">
                       <img 
-                        src={`${currentScenes[activeSketch].image}?v=2`} 
+                        src={`${currentScenes[activeSketch].image}?v=20260914_2`} 
                         alt={currentScenes[activeSketch].title}
                         className="w-full h-full object-cover transition-opacity duration-500"
                         onError={(e) => {
@@ -527,7 +527,7 @@ export default function GlucoscacaoPage() {
                           title={sketch.title}
                         >
                           <img 
-                            src={`${sketch.image}?v=2`} 
+                            src={`${sketch.image}?v=20260914_2`} 
                             alt={sketch.title} 
                             className="w-full h-full object-cover" 
                             onError={(e) => {
