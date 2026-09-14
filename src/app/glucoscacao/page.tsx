@@ -62,8 +62,8 @@ export default function GlucoscacaoPage() {
     {
       title: 'Escena 4',
       image: '/glucoscacao/idea1/4.jpeg',
-      description: '(Inicia Voz en Off de ella llamando a mamá) Muerde los nibs y cierra los ojos. El entorno del apartamento empieza a desvanecerse en líneas punteadas.',
-      action: 'Plano medio de su rostro. Las líneas del apartamento se vuelven curvas y suaves dando paso al recuerdo.'
+      description: 'Muerde los nibs y cierra los ojos.',
+      action: 'Plano medio de su rostro (Mientras come el nibs).'
     },
     {
       title: 'Escena 5',
