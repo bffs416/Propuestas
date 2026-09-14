@@ -110,62 +110,33 @@ export default function GlucoscacaoPage() {
     {
       title: 'Escena 12',
       image: '/glucoscacao/idea1/12.jpeg',
-      description: '[FIN DEL FLASHBACK] Una lágrima resbala por la mejilla de la joven. Abre los ojos; está de vuelta en su apartamento y siente una profunda nostalgia.',
-      action: 'Primer plano de su rostro. Una sola línea marca la lágrima para mantener la simplicidad absoluta.'
+      description: 'Ella mira la bolsa de nibs en su mano y con la otra mano puesta en su pecho sonrie',
+      action: 'Plano medio-corto.'
     },
     {
       title: 'Escena 13',
       image: '/glucoscacao/idea1/13.jpeg',
-      description: '(La voz en off continúa) Ella mira la bolsa de nibs en su mano y toma una decisión: saca su teléfono celular.',
-      action: 'Plano medio-corto. Vemos el teléfono en primer plano y a ella decidida al fondo.'
+      description: 'La joven se levanta con una expresión cálida y ligera, camina hacia la cocina.',
+      action: 'Seguimiento del movimiento de la joven hacia la cocina'
     },
     {
       title: 'Escena 14',
       image: '/glucoscacao/idea1/14.jpeg',
-      description: 'En la pantalla del celular aparece el letrero de "Llamando a Mamá...".',
-      action: 'Plano detalle de la pantalla del celular con tipografía de trazo limpio.'
+      description: 'Toma una licuadora, sirve leche (o bebida vegetal), añade una fruta y agrega Nibs de Chocolate . Enciende la licuadora y el batido adquiere un color profundo y cremoso.',
+      action: 'Tomas detalle de los nibs cayendo en la mezcla y la textura cremosa del batido.'
     },
     {
       title: 'Escena 15',
       image: '/glucoscacao/idea1/15.jpeg',
-      description: 'La llamada conecta. En la pantalla aparece la cara de la mamá sonriendo desde la cocina de la casa familiar.',
-      action: 'Plano detalle de la pantalla del teléfono mostrando el dibujo feliz de la mamá.'
+      description: 'La cámara se enfoca en el mesón de la cocina. Se observa la licuadora, la bolsa de Nibs de Chocolate Glucocacao y la taza con el batido vertido. La chica toma la taza con una mano y la bolsa de nibs con la otra.',
+      action: 'Plano medio-corto. Enfoque nítido en el empaque del producto y la taza servida. Sonido ambiental suave del hogar.'
     },
     {
       title: 'Escena 16',
       image: '/glucoscacao/idea1/16.jpeg',
-      description: 'La joven se apoya contra el sofá, se ríe a carcajadas mientras habla por la videollamada y sigue comiendo los nibs de chocolate.',
-      action: 'Plano medio. El lenguaje corporal cambia por completo: hombros relajados y sonrisa amplia.'
-    },
-    {
-      title: 'Escena 17',
-      image: '/glucoscacao/idea1/17.jpeg',
-      description: 'Plano de la mesa donde la bolsa de "Nibs de Chocolate" está abierta, con algunos nibs esparcidos artísticamente al lado del teléfono.',
-      action: 'Plano de producto integrado en la narrativa. Estética limpia y ordenada sobre la mesa.'
-    },
-    {
-      title: 'Escena 18',
-      image: '/glucoscacao/idea1/18.jpeg',
-      description: 'La bolsa de chocolate aparece en primer plano junto al celular. En la pantalla se lee la frase final: "Nibs de Cacao: El sabor que te une a tus raíces".',
-      action: 'Cierre de marca conceptual. Dibujo plano del empaque y texto con tipografía limpia.'
-    },
-    {
-      title: 'Escena 19',
-      image: '/glucoscacao/idea1/19.jpeg',
-      description: 'La toma se aleja de la mesa. El apartamento ya no se ve vacío; el entorno se siente cálido y lleno de la energía de la llamada.',
-      action: 'Plano general del espacio. Líneas más curvas y una composición mucho más acogedora.'
-    },
-    {
-      title: 'Escena 20',
-      image: '/glucoscacao/idea1/20.jpeg',
-      description: 'La joven mira a la ventana, come un último pedazo de chocolate y suspira con una paz absoluta. Ya no se siente sola.',
-      action: 'Primer plano de tres cuartos. Rostro que transmite total serenidad y felicidad.'
-    },
-    {
-      title: 'Escena 21',
-      image: '/glucoscacao/idea1/21.jpeg',
-      description: 'Ella abraza con ambas manos la bolsa de chocolates contra su pecho, cerrando los ojos con una sonrisa gigante mientras escucha la risa de su mamá al teléfono. Se siente protegida y en casa. El boceto se desvanece a blanco.',
-      action: 'Plano medio de la joven. Lenguaje corporal de protección y calidez absoluta para cerrar el video de forma muy emotiva.'
+      description: 'En primer plano se aprecia una canasta con otros productos de Glucocacao. La joven coloca la bolsa de nibs dentro de la canasta. De fondo, un poco desenfocado, se ve cómo ella camina hacia el sofá a tomarse su batido al lado del árbol de Navidad lleno de luces encendidas.',
+      action: 'Plano detalle con profundidad de campo (efecto bokeh). Foco en la familia de productos en primer plano mientras en el fondo se completa la acción cálida de la chica en el sofá..',
+      voiceover: '(Tono cálido, pausado y muy emotivo)\n"A veces, un solo bocado tiene el poder de devolverte a casa.\nGlucocacao: cacao orgánico, puro y sin aditivos, directo de nuestras fincas colombianas a tu corazón.\nRevive el sabor inolvidable del hogar."'
     }
   ];
 
@@ -525,6 +496,16 @@ export default function GlucoscacaoPage() {
                             </h4>
                             <p className="text-slate-600 text-sm md:text-base leading-relaxed">{currentScenes[activeSketch].action}</p>
                           </div>
+                          {(currentScenes[activeSketch] as any).voiceover && (
+                            <div className="bg-rose-50/50 p-4 rounded-xl border border-rose-100">
+                              <h4 className="text-sm font-bold text-rose-800 mb-2 flex items-center gap-2">
+                                🎙️ Voz en Off (Locución)
+                              </h4>
+                              <p className="text-slate-700 text-sm md:text-base leading-relaxed whitespace-pre-line italic font-medium">
+                                {(currentScenes[activeSketch] as any).voiceover}
+                              </p>
+                            </div>
+                          )}
                         </div>
                       </div>
                     </div>
