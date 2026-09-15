@@ -43,97 +43,97 @@ export default function GlucoscacaoPage() {
   const idea1Scenes = [
     {
       title: 'Escena 1',
-      image: '/glucoscacao/idea1/1.jpeg',
+      image: '/glucoscacao/idea1/32.jpeg',
       description: 'Una joven está sentada sola en el suelo de su apartamento. Hay un pequeño árbol de Navidad al fondo. Se nota la soledad y la frialdad de estar lejos en otra ciudad.',
       action: 'Plano general. Líneas muy limpias que dibujen la silueta de la chica encogida y el arbolito navideño básico.'
     },
     {
       title: 'Escena 2',
-      image: '/glucoscacao/idea1/2.jpeg',
+      image: '/glucoscacao/idea1/33.jpeg',
       description: 'Ella sostiene una bolsa de empaque artesanal que dice "Nibs de Chocolate". Abre el empaque con cuidado.',
       action: 'Plano detalle de las manos sosteniendo la bolsa. Enfoque directo en el empaque del producto.'
     },
     {
       title: 'Escena 3',
-      image: '/glucoscacao/idea1/3.jpeg',
+      image: '/glucoscacao/idea1/34.jpeg',
       description: 'Saca unos cuantos nibs de chocolate con la punta de los dedos y los acerca a su boca.',
       action: 'Plano detalle macro de los dedos tomando los pequeños trozos (nibs) de chocolate.'
     },
     {
       title: 'Escena 4',
-      image: '/glucoscacao/idea1/4.jpeg',
+      image: '/glucoscacao/idea1/35.jpeg',
       description: 'Muerde los nibs y cierra los ojos.',
       action: 'Plano medio de su rostro (Mientras come el nibs).'
     },
     {
       title: 'Escena 5',
-      image: '/glucoscacao/idea1/5.jpeg',
+      image: '/glucoscacao/idea1/36.jpeg',
       description: 'Empieza a saborear y aparece una ligera sonrisa en su rostro.',
       action: 'Empieza a parecer una luz amarilla en esu cabeza sonido de alegria y pajaros cantando, y en su pecho aparece una loz roja sonidos de un corazon tranquilo. Las líneas del apartamento se vuelven curvas y suaves dando paso al recuerdo.'
     },
     {
       title: 'Escena 6',
-      image: '/glucoscacao/idea1/6.jpeg',
+      image: '/glucoscacao/idea1/37.jpeg',
       description: '[FLASHBACK] La escena cambia por completo. Vemos la silueta de unos árboles de cacao gigantes bajo el sol del campo.',
       action: 'Plano general del campo. Líneas muy sencillas para simular la naturaleza y las mazorcas colgando.'
     },
     {
       title: 'Escena 7',
-      image: '/glucoscacao/idea1/7.jpeg',
+      image: '/glucoscacao/idea1/38.jpeg',
       description: 'La abuela, con una sonrisa dulce y tradicional, estira sus manos para recolectar una mazorca de cacao.',
       action: 'Plano medio de la abuela. Trazo tierno, expresivo y muy simplificado.'
     },
     {
       title: 'Escena 8',
-      image: '/glucoscacao/idea1/8.jpeg',
+      image: '/glucoscacao/idea1/39.jpeg',
       description: 'Las manos arrugadas de la abuela abren la mazorca, dejando ver los granos de cacao puros en su interior.',
       action: 'Plano detalle de la fruta abierta. Resaltar de forma icónica los granos del producto natural.'
     },
     {
       title: 'Escena 9',
-      image: '/glucoscacao/idea1/9.jpeg',
+      image: '/glucoscacao/idea1/40.jpeg',
       description: 'La abuela tuesta los granos en un comal antiguo. Líneas curvas simples simulan el aroma flotando en el aire del campo.',
       action: 'Plano medio. Movimiento sutil en las líneas del humo del tostado ancestral.'
     },
     {
       title: 'Escena 10',
-      image: '/glucoscacao/idea1/10.jpeg',
+      image: '/glucoscacao/idea1/41.jpeg',
       description: 'La abuela muele el cacao con fuerza y ritmo sobre un metate de piedra tradicional.',
       action: 'Plano picado. Siluetas claras de la acción tradicional del molido artesanal.'
     },
     {
       title: 'Escena 11',
-      image: '/glucoscacao/idea1/11.jpeg',
+      image: '/glucoscacao/idea1/42.jpeg',
       description: 'La abuela sirve el chocolate en tazas para toda la familia reunida alrededor de una mesa rústica. Todos ríen en un momento de compartir.',
       action: 'Plano general. Figuras sencillas compartiendo felices en una Navidad del pasado.'
     },
     {
       title: 'Escena 12',
-      image: '/glucoscacao/idea1/12.jpeg',
+      image: '/glucoscacao/idea1/43.jpeg',
       description: 'Ella mira la bolsa de nibs en su mano y con la otra mano puesta en su pecho sonrie',
       action: 'Plano medio-corto.'
     },
     {
       title: 'Escena 13',
-      image: '/glucoscacao/idea1/13.jpeg',
+      image: '/glucoscacao/idea1/44.jpeg',
       description: 'La joven se levanta con una expresión cálida y ligera, camina hacia la cocina.',
       action: 'Seguimiento del movimiento de la joven hacia la cocina'
     },
     {
       title: 'Escena 14',
-      image: '/glucoscacao/idea1/14.jpeg',
+      image: '/glucoscacao/idea1/45.jpeg',
       description: 'Toma una licuadora, sirve leche (o bebida vegetal), añade una fruta y agrega Nibs de Chocolate . Enciende la licuadora y el batido adquiere un color profundo y cremoso.',
       action: 'Tomas detalle de los nibs cayendo en la mezcla y la textura cremosa del batido.'
     },
     {
       title: 'Escena 15',
-      image: '/glucoscacao/idea1/15.jpeg',
+      image: '/glucoscacao/idea1/46.jpeg',
       description: 'La cámara se enfoca en el mesón de la cocina. Se observa la licuadora, la bolsa de Nibs de Chocolate Glucocacao y la taza con el batido vertido. La chica toma la taza con una mano y la bolsa de nibs con la otra.',
       action: 'Plano medio-corto. Enfoque nítido en el empaque del producto y la taza servida. Sonido ambiental suave del hogar.'
     },
     {
       title: 'Escena 16',
-      image: '/glucoscacao/idea1/16.jpeg',
+      image: '/glucoscacao/idea1/47.jpeg',
       description: 'En primer plano se aprecia una canasta con otros productos de Glucocacao. La joven coloca la bolsa de nibs dentro de la canasta. De fondo, un poco desenfocado, se ve cómo ella camina hacia el sofá a tomarse su batido al lado del árbol de Navidad lleno de luces encendidas.',
       action: 'Plano detalle con profundidad de campo (efecto bokeh). Foco en la familia de productos en primer plano mientras en el fondo se completa la acción cálida de la chica en el sofá..',
       voiceover: '(Tono cálido, pausado y muy emotivo)\n"A veces, un solo bocado tiene el poder de devolverte a casa.\nGlucocacao: cacao orgánico, puro y sin aditivos, directo de nuestras fincas colombianas a tu corazón.\nRevive el sabor inolvidable del hogar."'
